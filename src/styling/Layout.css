@@ -1,0 +1,23 @@
+
+
+/* layout classes */
+
+.d-flex{
+    display: flex;
+  }
+
+.justify-content-space-between{
+    justify-content: space-between;
+  }
+
+
+  /* layout theme settings */
+
+  .light-theme{
+    color: black;
+      
+  }
+
+  .dark-theme{
+    color: white; 
+  }
