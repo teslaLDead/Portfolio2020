@@ -1,6 +1,10 @@
 
 
+/* Typography classes for headings and paragraphs texts */
 
+/* This is a general stylesheet. Contains font styling and color css */
+
+/* Component specific styles will be found in the respective component directory */
 
 h1{
   font-size: 96px;

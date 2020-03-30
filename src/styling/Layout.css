@@ -1,6 +1,8 @@
 
 
-/* layout classes */
+/* Layout and color classes used throughout the project */
+
+/* These are general layout styles. Component specific styles will NOT be found here. Mainly helper classes like d-flex, h-100 etc etc. */
 
 .d-flex{
     display: flex;
@@ -19,7 +21,7 @@
   }
 
 
-  /* layout theme settings */
+  /* theme and color settings */
 
   .light-theme{
     color: black;
