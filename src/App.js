@@ -7,11 +7,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App dark-theme h-100">
-      
+    <div className="App dark-theme">
+      <main>
         <NavBar />
+        
+        </main>
         <BackgroundCurtain />
-      
     </div>
   );
 }

@@ -5,10 +5,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .border-curtain {
-    width: 20%;
+    min-width: 15%;
     height: 100%;
     border-left: 1px rgba(126, 126, 126, 0.15) solid;
   }

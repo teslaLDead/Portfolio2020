@@ -15,6 +15,12 @@
   flex-direction: column;
 }
 
+.color-dark{
+  color: #7A52E9;
+}
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
@@ -60,21 +66,36 @@ and (orientation : portrait) {
 }
 
 /* Desktops and laptops ----------- */
+
+/* this covers all, for large and medium size use another. */
+
+
+/* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
- 
+  h1{
+    font-size: 72px;
+  }
+
+  p{
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+
 }
 
 
 /* Large screens ----------- */
 @media only screen
-and (min-width : 1824px) {
+and (min-width : 1659px) {
   h1{
     font-size: 96px;
-    font-weight: bold;
+  }
+
+  h2{
+    font-size: 36px;
   }
 }
-
 
 
 

@@ -32,6 +32,9 @@
     color: white; 
   }
 
+  main{
+    margin: 0 15%;
+  }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
