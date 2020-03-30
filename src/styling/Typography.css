@@ -20,6 +20,23 @@
 }
 
 
+/* section heading style */
+
+.section-heading{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.section-heading::after{
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin-top: 3px;
+}
+
+/* --- */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen

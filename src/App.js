@@ -5,6 +5,9 @@ import './styling/Layout.css';
 import './styling/Typography.css';
 import './App.css';
 
+// page imports for react router dom
+import Home from './components/Pages/Home/Home';
+
 function App() {
   return (
     <div className="App dark-theme">
@@ -12,6 +15,7 @@ function App() {
       <main>
         
         <NavBar />
+        <Home />
         
       </main>
         <BackgroundCurtain />
