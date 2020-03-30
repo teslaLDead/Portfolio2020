@@ -20,3 +20,8 @@ The UI/UX has be created by me in Adobe XD. The motivation for the UI has been t
 
 ## Development
 
+## Dependencies and Libraries Used
+
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+
+* [React-Router-Dom](https://reacttraining.com/react-router/)
