@@ -32,6 +32,11 @@
     color: white; 
   }
 
+
+  .pointer{
+    cursor: pointer;
+  }
+
   main{
     margin: 0 15%;
   }

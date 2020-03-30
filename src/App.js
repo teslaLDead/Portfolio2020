@@ -8,10 +8,12 @@ import './App.css';
 function App() {
   return (
     <div className="App dark-theme">
+      {/* main will contain all the content and will provide side margins to the child components */}
       <main>
+        
         <NavBar />
         
-        </main>
+      </main>
         <BackgroundCurtain />
     </div>
   );

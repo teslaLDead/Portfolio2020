@@ -7,9 +7,12 @@
     left: 0;
     z-index: -1;
 }
-
+/* border curtains are the side curtains  */
 .border-curtain {
+    
+  /* this will set the side width of the main design */
     min-width: 15%;
+
     height: 100%;
     border-left: 1px rgba(126, 126, 126, 0.15) solid;
   }
