@@ -1,6 +1,8 @@
 import React from "react";
 import PortflioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
 import BlogThumbnail from "../../CommonComponents/BlogThumbnail/BlogThumbnail";
+import techAdventurerIllustration from './assets/tech-adventurer illustration.svg';
+import blogWritingIllustration from './assets/blog writing illustration.svg';
 class Home extends React.Component{
     state={
 
@@ -30,19 +32,26 @@ class Home extends React.Component{
                 <div className="section-heading">
                     Introductions
                 </div>
-                <h2>
-                   Hi. I am a <span className="text-highlight">designer</span> and a <span className="text-highlight">developer</span><br/>
-                    I like to call myself a <span className="color-dark">'Tech Adventurer'.</span>
-                </h2>
-                <p>
-                    Passionate software developer with a zealousness for good <br/>
-                    designs. Interested in working on solutions for complex <br/>
-                    problems and creating innovational digital products. 
-                </p>
-                <p>
-                    My current area of interest and work are <b>UI/UX Design</b> and 
-                    <b>Full Stack Development. </b>
-                </p>
+                <div className="d-flex">
+                    <div>
+                        <h2>
+                        Hi. I am a <span className="text-highlight">designer</span> and a <span className="text-highlight">developer</span><br/>
+                            I like to call myself a <span className="color-dark">'Tech Adventurer'.</span>
+                        </h2>
+                        <p>
+                            Passionate software developer with a zealousness for good <br/>
+                            designs. Interested in working on solutions for complex <br/>
+                            problems and creating innovational digital products. 
+                        </p>
+                        <p>
+                            My current area of interest and work are <b>UI/UX Design</b> and <br/>
+                            <b>Full Stack Development. </b>
+                        </p>
+                    </div>
+                    <div>
+                        <img src={techAdventurerIllustration} alt=""/>
+                    </div>
+                </div>
             </div>
             {/* porject section */}
             <div>
@@ -75,7 +84,7 @@ class Home extends React.Component{
                     </div>
                     {/* illustration will be here */}
                     <div>
-                        <img src="" alt="" />
+                        <img src={blogWritingIllustration} alt="" />
                     </div>
                 </div>
                 <div>
