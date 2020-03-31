@@ -20,6 +20,16 @@
 }
 
 
+.text-highlight{
+  background: #7A52E9;
+  padding: 0 5px;
+  margin: 0px 2px;
+}
+
+.medium-font{
+  font-weight: 500;
+}
+
 /* section heading style */
 
 .section-heading{
@@ -36,13 +46,29 @@
   margin-top: 3px;
 }
 
+.lg-line-height{
+  line-height: 1.3em;
+}
+
+.xl-line-height{
+  line-height: 1.7em;
+}
+
 /* --- */
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
+  h1{
+    font-size: 42px;
+  }
+
+  p{
+    font-size: 14px;
+  }
 
 
 }
@@ -96,7 +122,11 @@ and (min-width : 1224px) {
 
   p{
     font-size: 15px;
-    letter-spacing: 0.3px;
+
+  }
+
+  a{
+    font-size: 15px;
   }
 
 }

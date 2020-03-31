@@ -3,3 +3,9 @@
     font-size: 16px;
     color: white;
 }
+
+#navbar-container{
+    position: fixed;
+    top: 60px;
+    width: 76%;
+}

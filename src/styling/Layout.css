@@ -16,10 +16,22 @@
     height: 100%;
   }
 
-  .w-100{
-      width: 100%;
-  }
+.hv-100{
+  height: 100vh;
+}
 
+.w-100{
+    width: 100%;
+}
+
+.w-75{
+  width: 75%;
+}
+
+.my-5{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
   /* theme and color settings */
 
@@ -28,25 +40,58 @@
       
   }
 
+  .light-theme a{
+    color: white;
+  }
+
   .dark-theme{
     color: white; 
   }
 
+  .dark-theme a{
+    color: white;
+  }
 
   .pointer{
     cursor: pointer;
   }
 
   main{
-    margin: 0 15%;
+    margin: 0 12%;
   }
+
+
+  header{
+    padding-top: 55px;
+    
+  }
+
+  .flex-column{
+    flex-direction: column;
+  }
+
+ 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
-
+  .sm-col-1,.sm-col-2,.sm-col-3,.sm-col-4{
+    position: relative;
+  }
+  .sm-col-1{
+    left: 0%;
+  }
+  .sm-col-2{
+    left: 25%;
+  }
+  .sm-col-3{
+    left: 50%;
+  }
+  .sm-col-4{
+    left: 75%;
+  }
 
 }
 
@@ -88,12 +133,23 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
+
+  .lg-col-1,.lg-col-2,.lg-col-3,.lg-col-4{
+    position: relative;
+  }
+
+ .lg-col-1{
+   left: 0%;
+ }
+ .lg-col-2{
+  left: 25%;
+}
+.lg-col-3{
+  left: 50%;
+}
+.lg-col-4{
+  left: 75%;
+}
  
 }
 
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-  
-}

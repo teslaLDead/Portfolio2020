@@ -4,7 +4,7 @@ import './NavBar.css';
 
 function NavBar(){
     return (
-        <div className="d-flex justify-content-space-between">
+        <div id="navbar-container" className="d-flex justify-content-space-between">
             <div id="nav-logo">
                 <a href="" >PK</a>
             </div>
