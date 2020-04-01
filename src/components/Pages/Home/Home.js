@@ -66,7 +66,7 @@ class Home extends React.Component{
             <PortflioViewer />
 
             {/* thoughts and ideas section */}
-            <div>
+            <div className="bg-white light-theme">
                 <div className="d-flex">
                     {/* left side of the section and right side will be used for illustration */}
                     <div>
@@ -84,10 +84,11 @@ class Home extends React.Component{
                     </div>
                     {/* illustration will be here */}
                     <div>
+                        {/* this illustration will have hover effect of something */}
                         <img src={blogWritingIllustration} alt="" />
                     </div>
                 </div>
-                <div>
+                <div className="light-theme">
                     <div className="section-heading">
                         Know me more
                     </div>
