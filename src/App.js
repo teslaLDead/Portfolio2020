@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -13,22 +12,36 @@ import './App.css';
 
 // page imports for react router dom
 import Home from './components/Pages/Home/Home';
-import Footer from './components/CommonComponents/Footer/Footer'
+import About from './components/Pages/About/About';
+import Work from './components/Pages/Work/Work';
+import Blog from './components/Pages/Blog/BlogHome';
+import BlogPost from './components/Pages/Blog/BlogPost';
+import Footer from './components/CommonComponents/Footer/Footer';
+import Contact from './components/Pages/Contact/Contact';
 
 function App() {
   return (
-    <Router>
+    // <Router>
     <div className="App dark-theme">
       {/* main will contain all the content and will provide side margins to the child components */}
-      <main>
+     
         
         <NavBar />
-        <Home />
+        <Switch>
+
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/work" exact component={Work} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/blogs/:blogPostUrl" exact component={BlogPost} />
+          <Route path="/contact" exact component={Contact}/>
+
+        </Switch>
         <Footer />
-      </main>
-        <BackgroundCurtain />
+     
+        {/* <BackgroundCurtain /> */}
     </div>
-    </Router>
+    // </Router>
   );
 }
 

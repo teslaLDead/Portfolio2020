@@ -8,8 +8,8 @@ function Footer(){
             <div className="section-heading">
                 Contact
             </div>
-            <div className="d-flex">
-                <div className="w-75">
+            <div className="row">
+                <div className="col-3 col-m-4">
                     <h2>
                     I am looking for new <br/>
                     and exciting challenges.
