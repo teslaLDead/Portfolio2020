@@ -4,6 +4,10 @@
 
 /* These are general layout styles. Component specific styles will NOT be found here. Mainly helper classes like d-flex, h-100 etc etc. */
 
+ul {
+	list-style: none;
+	padding-left: 0;
+}
 .d-flex{
     display: flex;
   }
@@ -155,3 +159,6 @@
     flex-direction: column;
   }
 
+  .pr-2{
+    padding-right: 2em;
+  }

@@ -1,9 +1,10 @@
 import React from "react";
+import resume from './Paritosh_Kumar_Resume.pdf';
 
 export default function About(){
     return(
         <div>
-            <header>
+            <header className="hv-100">
                 <div className="section-heading">
                     About
                 </div>
@@ -17,51 +18,51 @@ export default function About(){
                     Areas of Work
                 </div>
                 
-                <div className="d-flex">
-                    <div>
+                <div className="row">
+                    <div className="col-1 col-m-4 ">
                         <h3>
                             Full Stack
                         </h3>
-                        <p>
+                        <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
                     </div>
-                    <div>
+                    <div className="col-1 col-m-4 ">
                         <h3>
                             Frontend
                         </h3>
-                        <p>
+                        <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
                     </div>
-                    <div>
+                    <div className="col-1 col-m-4 ">
                         <h3>
                             UI/UX Design
                         </h3>
-                        <p>
+                        <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
                     </div>
-                    <div>
+                    <div className="col-1 col-m-4 ">
                         <h3>
                             Backend
                         </h3>
-                        <p>
+                        <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
                     </div>
                 </div>
                 
             </div>
-            <div>
+            <div className="bg-white light-theme">
                 {/* white background section  */}
                 <div className="section-heading">
                     Tech Explored
                 </div>
-                <div>
+                <div className="row ">
                     {/* flex blox for dev and design skills images */}
-                    <div>
-                        <p>
+                    <div className="col-2 col-m-4">
+                        <p className="bold">
                             Development
                         </p>
                         <div>
@@ -80,8 +81,8 @@ export default function About(){
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>
+                    <div className="col-2 col-m-4">
+                        <p className="bold">
                             Design
                         </p>
                         <div>
@@ -106,40 +107,40 @@ export default function About(){
                 <div className="section-heading">
                     Breif Overview
                 </div>
-                <div>
+                <div className="row">
                     {/* education row flex-row*/}
-                    <div>
-                        <p>Education</p>
+                    <div className="col-1 col-m-4">
+                        <h2>Education</h2>
                     </div>
-                    <div>
+                    <div className="col-1 col-m-4">
                         <p>
-                            Integrated Post Graduate (M.Tech + B.Tech) <br/>
-                            Information Technology (2015 - 2020)
+                            <span className="bold">Integrated Post Graduate (M.Tech + B.Tech) <br/></span>
+                            <span className="medium-font">Information Technology (2015 - 2020)</span>
                         </p>
                         <div>
-                            <a href="">IIIT Gwalior</a>
+                            <a href="https://www.iiitm.ac.in/index.php/en/" className="bold">IIIT Gwalior</a>
                         </div>
                     </div>
-                    <div>
-                        <h3>
-                            Coursework
-                        </h3>
+                    <div className="col-offset-1 col-m-offset-0">
+                        <p className="section-heading">
+                           <b> Coursework</b>
+                        </p>
                         <ul>
-                            <li>Data Structures & Algo</li>
-                            <li>Object Oriented Programming</li>
-                            <li>Database Design and Management</li>
-                            <li>Systems Analysis and Design</li>
-                            <li>Cloud Computing</li>
+                            <li><p>Data Structures & Algo</p></li>
+                            <li><p>Object Oriented Programming</p></li>
+                            <li><p>Database Design and Management</p></li>
+                            <li><p>Systems Analysis and Design</p></li>
+                            <li><p>Cloud Computing</p></li>
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className="row">
                     {/* education row flex-row*/}
-                    <div>
-                        <p>Profession</p>
+                    <div className="col-1 col-m-4">
+                        <h2>Profession</h2>
                     </div>
-                    <div>
-                        <p>
+                    <div className="col-1 col-m-4">
+                        <p className="bold">
                             Developer and Designer
                         </p>
                         <p>
@@ -150,25 +151,25 @@ export default function About(){
                             About to graduate college.
                         </p>
                         <p>
-                            Currently looking for full time opportunities <br/> in awesome organizations.
+                            Currently looking for <span className="bold">full time</span> opportunities <br/> in awesome organizations.
                         </p>
                         <div>
-                            <a href="">Download Resume</a>
+                            <a href={resume} className="bold">Download Resume</a>
                         </div>
                     </div>
-                    <div>
-                        <h3>
-                        Roles Interested
-                        </h3>
+                    <div className="col-offset-1 col-m-offset-0">
+                        <p className="section-heading">
+                        <b>Roles Interested</b>
+                        </p>
                         <ul>
-                            <li>Software Developer/Engineer</li>
-                            <li>Frontend Engineer</li>
-                            <li>Backend Engineer</li>
-                            <li>UI/UX Designer</li>
-                            <li>Full Stack Developer</li>
+                            <li><p>Software Developer/Engineer</p></li>
+                            <li><p>Frontend Engineer</p></li>
+                            <li><p>Backend Engineer</p></li>
+                            <li><p>UI/UX Designer</p></li>
+                            <li><p>Full Stack Developer</p></li>
                         </ul>
                         <div>
-                            <a href="mailto" >Get In Touch</a>
+                            <a href="mailto:kumar.paritosh20@gmail.com?subject=Like%20to%20connect" className="bold">Get In Touch</a>
                         </div>
                     </div>
                 </div>
