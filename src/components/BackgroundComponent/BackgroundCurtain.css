@@ -1,35 +1,59 @@
-#background-curtain{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+#background{
+  background: #191A1E;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
 }
-/* border curtains are the side curtains  */
-.border-curtain {
-    
-  /* this will set the side width of the main design */
-    min-width: 12%;
 
-    height: 100%;
-    border-left: 1px rgba(126, 126, 126, 0.15) solid;
-  }
-  .curtain {
-    width: 25%;
-    height: 100%;
-    border-left: 1px rgba(126, 126, 126, 0.15) solid;
-  }
+.container{
+  position: relative;
+  height: 100%;
+  width: 76%;
+  /* margin-left: -1px; */
+  display: flex;
+  box-sizing: border-box;
+}
 
-  .curtain::before{
-    transition: all 0.3s ease-in-out;
-    content: '';
-    height: 100%;
-    background:white;
-    /* width: 25%; */
-    z-index: 1;
-    position: absolute;
-  }
 
-  
+
+.curtain{
+  position: relative;
+  height: 100%;
+  border-left: 1px solid rgb(34, 34, 34); 
+  width: 25%; 
+  /* margin-left: -4px; */
+  box-sizing: border-box;
+}
+
+
+.left-border,.right-border{
+  position: relative;
+  border-left: 1px solid rgb(34, 34, 34); 
+  width: 12%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.curtain::before,.left-border::before,.right-border::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  /* width: 0%; */
+  background:white;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+}
+
+.close-curtain .left-border::before,.close-curtain .right-border::before,.close-curtain .curtain::before{
+  width: 0%;
+}
+
+.open-curtain .left-border::before,.open-curtain .right-border::before,.open-curtain .curtain::before{
+  width: 100%;
+}

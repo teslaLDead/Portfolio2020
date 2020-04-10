@@ -25,7 +25,7 @@ function App() {
     <div className="App dark-theme">
       {/* main will contain all the content and will provide side margins to the child components */}
      
-        
+        <BackgroundCurtain />
         <NavBar />
         <Switch>
 

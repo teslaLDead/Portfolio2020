@@ -8,6 +8,9 @@ ul {
 	list-style: none;
 	padding-left: 0;
 }
+a{
+  text-decoration: none;
+}
 .d-flex{
     display: flex;
   }
@@ -26,7 +29,9 @@ ul {
   .col-3{
     width: 75%;
   }
-
+  header{
+    height: 100vh;
+  }
   .justify-content-center{
     justify-content: center;
   }
@@ -37,7 +42,9 @@ ul {
 .justify-content-space-between{
     justify-content: space-between;
   }
-
+  .position-relative{
+    position: relative;
+  }
   /* offset classes */
   .col-offset-1{
     margin-left: 25%;
@@ -52,6 +59,10 @@ ul {
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .m-flex-direction-col-reverse{
+      flex-direction: column-reverse;
+    }
      
     /* width classes for mobile */
     .col-m-1{

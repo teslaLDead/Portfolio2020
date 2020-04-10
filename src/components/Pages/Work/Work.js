@@ -14,8 +14,8 @@ class Work extends React.Component{
                     <br/>
                     created with care.
                     </h1>
-                    <p>
-                    Some of my work in various fields of IT. I like to explore ideas and try creating products I like.
+                    <p className="medium-font xl-line-height col-offset-3 col-1 col-m-offset-0 col-m-4"> 
+                    Some of my work in various fields <br/> of IT. I like to explore ideas and try <br/> creating products I like.
                     </p>
                 </header>
                 <div>

@@ -3,15 +3,20 @@ import './BackgroundCurtain.css';
 function BackgroundCurtain(){
     return (
       
-            <div id="background-curtain">
-    <div className="border-curtain"></div>
-    <div className="curtain"></div>
-    <div className="curtain"></div>
-    <div className="curtain"></div>
-    <div className="curtain"></div>
-    <div className="border-curtain"></div>
-  
+        <div id="background" class="close-curtain">
+        
+        <div class="left-border"></div>
+
+        
+        <div class="container">
+            <div class="curtain"></div>
+            <div class="curtain"></div>
+            <div class="curtain"></div>
+            <div class="curtain"></div>
         </div>
+        <div class="right-border"></div>
+        
+      </div>
     )
 }
 
