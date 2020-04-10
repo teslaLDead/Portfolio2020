@@ -19,13 +19,24 @@ import BlogPost from './components/Pages/Blog/BlogPost';
 import Footer from './components/CommonComponents/Footer/Footer';
 import Contact from './components/Pages/Contact/Contact';
 
-function App() {
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state={
+      curtainState:"close"
+    }
+  }
+
+ 
+
+  render(){
   return (
     // <Router>
     <div className="App dark-theme">
       {/* main will contain all the content and will provide side margins to the child components */}
      
-        <BackgroundCurtain />
+        <BackgroundCurtain curtainState={this.state.curtainState}/>
         <NavBar />
         <Switch>
 
@@ -42,7 +53,7 @@ function App() {
         {/* <BackgroundCurtain /> */}
     </div>
     // </Router>
-  );
+  );}
 }
 
 export default App;
