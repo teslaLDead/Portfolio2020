@@ -1,7 +1,9 @@
 #background{
-  background: #191A1E;
+  /* background: #191A1E; */
   width: 100%;
   height: 100%;
+  max-width: 100vw; /* this was added to adjust for the mobile width */
+  
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -54,7 +56,7 @@
   height: 100%;
   /* width: 0%; */
   background:white;
-  transition: all 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
 }
 

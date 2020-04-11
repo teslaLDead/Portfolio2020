@@ -11,6 +11,9 @@ ul {
 a{
   text-decoration: none;
 }
+img{
+  max-width: 100%;
+}
 .d-flex{
     display: flex;
   }
@@ -115,8 +118,21 @@ a{
 }
 
 .my-5{
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.py-5{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.mb-100px{
+  margin-bottom: 100px;
+}
+
+.mb-200px{
+  margin-bottom: 200px;
 }
 
 .bg-white{

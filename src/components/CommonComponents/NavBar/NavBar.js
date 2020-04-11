@@ -4,13 +4,13 @@ import {Link} from "react-router-dom";
 import './NavBar.css';
 // import logo from './logo.png';
 
-function NavBar(){
+function NavBar(props){
     return (
         <div id="navbar-container" className="d-flex justify-content-space-between">
             <div id="nav-logo">
                 <Link to="/" >PK</Link>
             </div>
-            <div>
+            <div onClick={props.toggleCurtain}>
                 <MenuBtton />
             </div>
         </div>

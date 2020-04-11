@@ -28,22 +28,22 @@ class Home extends React.Component{
                     complex or simple problems.<br/>
                 </p>
             </header>
-            <div>
+            <div className="mb-100px">
                 <div className="section-heading">
                     Introductions
                 </div>
                 <div className="row">
                     <div className="col-2 col-m-4">
-                        <h2>
+                        <h2 className="py-5">
                         Hi. I am a <span className="text-highlight">designer</span> and a <span className="text-highlight">developer</span><br/>
                             I like to call myself a <span className="color-dark">'Tech Adventurer'.</span>
                         </h2>
-                        <p>
+                        <p className="py-5">
                             Passionate software developer with a zealousness for good <br/>
                             designs. Interested in working on solutions for complex <br/>
                             problems and creating innovational digital products. 
                         </p>
-                        <p>
+                        <p className="py-5">
                             My current area of interest and work are <b>UI/UX Design</b> and <br/>
                             <b>Full Stack Development. </b>
                         </p>
@@ -54,7 +54,7 @@ class Home extends React.Component{
                 </div>
             </div>
             {/* porject section */}
-            <div>
+            <div className="mb-200px">
                 <div className="section-heading">
                     Notable Projects 
                 </div>
@@ -63,7 +63,10 @@ class Home extends React.Component{
                     solutions for big and small problems.
                 </h2>
             </div>
+            <div className="mb-200px">
             <PortflioViewer />
+            </div>
+            
 
             {/* thoughts and ideas section */}
             <div className="bg-white light-theme">

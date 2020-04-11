@@ -28,6 +28,19 @@ class App extends React.Component {
     }
   }
 
+  toggleCurtain=()=>{
+
+    if (this.state.curtainState==="close"){
+    this.setState({
+      curtainState: "open"
+    })
+  }
+    else{
+      this.setState({
+        curtainState: "close"
+      })
+    }
+  }
  
 
   render(){
@@ -37,7 +50,7 @@ class App extends React.Component {
       {/* main will contain all the content and will provide side margins to the child components */}
      
         <BackgroundCurtain curtainState={this.state.curtainState}/>
-        <NavBar />
+        <NavBar toggleCurtain={this.toggleCurtain}/>
         <Switch>
 
           <Route path="/" exact component={Home} />
