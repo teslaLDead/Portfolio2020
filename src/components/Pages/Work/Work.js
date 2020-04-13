@@ -4,12 +4,12 @@ import PortfolioViewer from '../../CommonComponents/PortfolioViewer/PortfolioVie
 class Work extends React.Component{
     render(){
         return(
-            <div>
+            <div className="dark-theme">
                 <header>
                     <div className="section-heading">
                       Work  
                     </div>
-                    <h1>
+                    <h1 className="py-5">
                     Digital products    
                     <br/>
                     created with care.
@@ -18,7 +18,7 @@ class Work extends React.Component{
                     Some of my work in various fields <br/> of IT. I like to explore ideas and try <br/> creating products I like.
                     </p>
                 </header>
-                <div>
+                <div className="my-5">
                     {/* for loop will be inserted here to render the portfolio viewer for all the work */}
                     <PortfolioViewer />
                 </div>

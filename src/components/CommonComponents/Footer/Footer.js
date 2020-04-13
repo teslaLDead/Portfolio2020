@@ -1,10 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import resume from './Paritosh_Kumar_Resume.pdf';
 
 
 function Footer(){
     return(
-        <div>
+        <div className="py-5 dark-theme">
             <div className="section-heading">
                 Contact
             </div>
@@ -18,33 +19,33 @@ function Footer(){
                 </div>
                 <div >
                     <div className="d-flex flex-column">
-                        <Link className="my-5">
+                        <Link to="/about" className="my-5">
                             <b>About</b>
                         </Link>
 
-                        <Link className="my-5">
+                        <Link to="/work" className="my-5">
                             <b>Work</b>
                         </Link>
 
-                        <Link className="my-5">
+                        <Link to="/blog" className="my-5">
                             <b>Blog</b>
                         </Link>
 
-                        <Link className="my-5">
+                        <a href={resume} className="my-5">
                             <b>Resume</b>
-                        </Link>
+                        </a>
 
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="https://github.com/teslaLDead">Github</a>
-                <a href="https://www.linkedin.com/in/paritosh-kumar-teslaldead/">LinkedIn</a>
-                <a href="https://www.behance.net/teslaldead">Behance</a>
-                <a href="https://www.facebook.com/paritosh.kumar.20">Facebook</a>
+            <div className="my-5">
+                <a href="https://github.com/teslaLDead" target="_blank" className="mr-5">Github</a>
+                <a href="https://www.linkedin.com/in/paritosh-kumar-teslaldead/" target="_blank" className="mx-5">LinkedIn</a>
+                <a href="https://www.behance.net/teslaldead" target="_blank" className="mx-5">Behance</a>
+                <a href="https://www.facebook.com/paritosh.kumar.20" target="_blank" className="mx-5">Facebook</a>
             </div>
-            <div>
-                <p>Made with &#60;&#92;&#62; by Paritosh Kumar. Circa 2020.</p>
+            <div className="text-center">
+                <p className="dim-text font-size-small">Made with &#60;&#92;&#62; by Paritosh Kumar. Circa 2020.</p>
             </div>
 
         </div>

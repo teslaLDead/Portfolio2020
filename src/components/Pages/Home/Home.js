@@ -10,7 +10,7 @@ class Home extends React.Component{
 
     render(){
         return(
-        <div>
+        <div className="dark-theme">
             <header className="hv-100 d-flex flex-column">
                 <div className="section-heading">
                     Tech Adventurer
@@ -58,21 +58,21 @@ class Home extends React.Component{
                 <div className="section-heading">
                     Notable Projects 
                 </div>
-                <h2>
+                <h2 className="my-5">
                     Thinking and creating innovative <br/>
                     solutions for big and small problems.
                 </h2>
             </div>
-            <div className="mb-200px">
+            <div className="mb-200px" style={{zIndex:"0",position:"relative"}}>
             <PortflioViewer />
             </div>
             
 
             {/* thoughts and ideas section */}
             <div className="bg-white light-theme">
-                <div>
+                <div className="position-relative">
                     {/* left side of the section and right side will be used for illustration */}
-                    <div className="section-heading">
+                    <div className="section-heading py-5">
                             Thoughts and Ideas
                     </div>
                     <h2>
@@ -99,7 +99,7 @@ class Home extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="light-theme">
+                <div className="light-theme position-relative">
                     <div className="section-heading">
                         Know me more
                     </div>

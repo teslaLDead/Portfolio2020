@@ -19,11 +19,26 @@
   color: #7A52E9;
 }
 
+.font-size-small{
+  font-size: small;
+}
 
 .text-highlight{
   background: #7A52E9;
   padding: 0 5px;
   margin: 0px 2px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.dim-text{
+  color: #ffffff60;
 }
 
 .medium-font{
@@ -39,6 +54,10 @@
 .section-heading{
   font-size: 15px;
   font-weight: 500;
+}
+
+.light-theme .section-heading::after{
+  background: black;
 }
 
 .section-heading::after{

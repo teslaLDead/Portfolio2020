@@ -46,7 +46,7 @@ class App extends React.Component {
   render(){
   return (
     // <Router>
-    <div className="App dark-theme">
+    <div className="App ">
       {/* main will contain all the content and will provide side margins to the child components */}
      
         <BackgroundCurtain curtainState={this.state.curtainState}/>

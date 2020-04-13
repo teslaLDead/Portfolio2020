@@ -3,20 +3,20 @@ import resume from './Paritosh_Kumar_Resume.pdf';
 
 export default function About(){
     return(
-        <div>
+        <div className="dark-theme">
             <header className="hv-100">
                 <div className="section-heading">
                     About
                 </div>
-                <h1>
+                <h1 className="py-5">
                     Creative designer <br/>
                     and passionate developer.
                 </h1>
             </header>
-            <div>
-                <div className="section-heading">
+            <div className="my-5">
+                <div className="section-heading my-5">
                     Areas of Work
-                </div>
+                </div>  
                 
                 <div className="row">
                     <div className="col-1 col-m-4 ">
@@ -103,11 +103,11 @@ export default function About(){
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="my-5">
                 <div className="section-heading">
                     Breif Overview
                 </div>
-                <div className="row">
+                <div className="row my-5 py-5">
                     {/* education row flex-row*/}
                     <div className="col-1 col-m-4">
                         <h2>Education</h2>
@@ -118,7 +118,7 @@ export default function About(){
                             <span className="medium-font">Information Technology (2015 - 2020)</span>
                         </p>
                         <div>
-                            <a href="https://www.iiitm.ac.in/index.php/en/" className="bold">IIIT Gwalior</a>
+                            <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank" className="bold">IIIT Gwalior</a>
                         </div>
                     </div>
                     <div className="col-offset-1 col-m-offset-0">
@@ -134,7 +134,7 @@ export default function About(){
                         </ul>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row my-5 py-5">
                     {/* education row flex-row*/}
                     <div className="col-1 col-m-4">
                         <h2>Profession</h2>
@@ -143,17 +143,17 @@ export default function About(){
                         <p className="bold">
                             Developer and Designer
                         </p>
-                        <p>
+                        <p className="my-5">
                             Worked as an intern in various organizations. 
                             Did professional freelancing work as well.
                         </p>
-                        <p> 
+                        <p className="my-5"> 
                             About to graduate college.
                         </p>
-                        <p>
+                        <p className="my-5">
                             Currently looking for <span className="bold">full time</span> opportunities <br/> in awesome organizations.
                         </p>
-                        <div>
+                        <div className="my-5 py-5">
                             <a href={resume} className="bold">Download Resume</a>
                         </div>
                     </div>
