@@ -1,7 +1,12 @@
 import React from "react";
 import resume from './Paritosh_Kumar_Resume.pdf';
 
-export default function About(){
+class About extends React.Component{
+
+   
+
+    render(){
+        // this.props.toggleCurtain();
     return(
         <div className="dark-theme">
             <header className="hv-100">
@@ -177,3 +182,6 @@ export default function About(){
         </div>
     )
 }
+}
+
+export default About;

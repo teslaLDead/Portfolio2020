@@ -11,3 +11,46 @@
     mix-blend-mode: difference;
     z-index: 2;
 }
+
+.menu-links{
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.menu-links:hover{
+    color: #abc629e0;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.menu-open{
+    display: flex;
+}
+
+.menu-closed{
+    display: none;
+}
+
+#nav-links-container > div{
+    padding: 1em 0;
+}
+
+#menu ul a{
+    
+    color: white;
+}
+
+#menu ul a:hover{
+    color: #abc629e0;
+}

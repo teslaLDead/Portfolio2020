@@ -24,7 +24,22 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      curtainState:"close"
+      curtainState:"close",
+      menuActive:false
+    }
+  }
+
+  toggleMenu=()=>{
+    if (this.state.menuActive)
+    {
+      this.setState({
+        menuActive:false
+      })
+    }
+    else{
+      this.setState({
+        menuActive:true
+      })
     }
   }
 
@@ -50,11 +65,15 @@ class App extends React.Component {
       {/* main will contain all the content and will provide side margins to the child components */}
      
         <BackgroundCurtain curtainState={this.state.curtainState}/>
-        <NavBar toggleCurtain={this.toggleCurtain}/>
+        <NavBar toggleCurtain={this.toggleCurtain} menuActive={this.state.menuActive} toggleMenu={this.toggleMenu}/>
         <Switch>
 
           <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
+          <Route path="/about" exact component={
+            ()=>(
+              <About toggleCurtain={this.toggleCurtain} />
+            )
+          } />
           <Route path="/work" exact component={Work} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/blogs/:blogPostUrl" exact component={BlogPost} />

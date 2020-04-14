@@ -39,10 +39,11 @@ function Footer(){
                 </div>
             </div>
             <div className="my-5">
-                <a href="https://github.com/teslaLDead" target="_blank" className="mr-5">Github</a>
-                <a href="https://www.linkedin.com/in/paritosh-kumar-teslaldead/" target="_blank" className="mx-5">LinkedIn</a>
-                <a href="https://www.behance.net/teslaldead" target="_blank" className="mx-5">Behance</a>
-                <a href="https://www.facebook.com/paritosh.kumar.20" target="_blank" className="mx-5">Facebook</a>
+                <a href="https://github.com/teslaLDead" target="_blank" rel="noopener noreferrer" className="mr-5">Github</a>
+                <a href="https://www.linkedin.com/in/paritosh-kumar-teslaldead/" target="_blank" rel="noopener noreferrer" className="mx-5">LinkedIn</a>
+                <a href="https://www.behance.net/teslaldead" target="_blank" rel="noopener noreferrer" className="mx-5">Behance</a>
+                <a href="https://www.facebook.com/paritosh.kumar.20" target="_blank" rel="noopener noreferrer" className="mx-5">Facebook</a>
+                <a href="https://codepen.io/teslaLdead" target="_blank" rel="noopener noreferrer" className="mx-5">CodePen</a>
             </div>
             <div className="text-center">
                 <p className="dim-text font-size-small">Made with &#60;&#92;&#62; by Paritosh Kumar. Circa 2020.</p>
