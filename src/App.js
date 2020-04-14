@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ReactGA from 'react-ga';
 import NavBar from './components/CommonComponents/NavBar/NavBar';
 import BackgroundCurtain from './components/BackgroundComponent/BackgroundCurtains';
 import './styling/Layout.css';
@@ -56,7 +57,10 @@ class App extends React.Component {
       })
     }
   }
- 
+  componentDidMount=()=>{
+    ReactGA.initialize('UA-120664378-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  }
 
   render(){
   return (

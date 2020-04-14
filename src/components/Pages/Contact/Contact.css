@@ -1,0 +1,8 @@
+#contact-form input{
+    width: 100%;
+    padding:1em 1.5em;
+}
+
+#contact-form input[type="textarea"]{
+    min-height: 200px;
+}

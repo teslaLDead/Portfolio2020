@@ -1,51 +1,80 @@
 import React from "react";
+import "./Contact.css";
 
 class Contact extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            subject:'',
+            message:''
+        }
+        this.handleSubjectChange=this.handleSubjectChange.bind(this);
+        this.handleMessageChange=this.handleMessageChange.bind(this);
+        this.handleSubmit=this.handleSubmit.bind(this);
+    }
+
+    handleSubjectChange(event){
+        this.setState({subject:event.target.value});
+    }
+    handleMessageChange(event){
+        this.setState({message:event.target.value});
+    }
+    handleSubmit(event){
+        event.preventDefault();
+    }
     render(){
         return(
-            <div>
+            <div className="dark-theme">
+                <div className="section-heading">
+                    Contact
+                </div>
                 <h1>
                 I am looking for new <br />
                 and exciting challenges
                 </h1>
-                <div>
-                    <div>
-                        <h2>
+                <div className="row">
+                    <div className="col-1 col-m-4">
+                        <div className="section-heading">
                             Find me on
-                        </h2>
+                        </div>
                         <ul>
-                            <li>
-                                <a href="" >LinkedIn</a>
+                            <li className=" py-5">
+                                <a href="https://github.com/teslaLDead" target="_blank" rel="noopener noreferrer"  className="bold">Github</a>
                             </li>
-                            <li>
-                                <a href="" >Github</a>
+                            <li className="my-5 py-5">
+                                <a href="https://www.linkedin.com/in/paritosh-kumar-teslaldead/" target="_blank"  rel="noopener noreferrer" className="bold">LinkedIn</a>
                             </li>
-                            <li>
-                                <a href="" >Behance</a>
+                            <li className="my-5 py-5">
+                                <a href="https://www.behance.net/teslaldead" target="_blank" rel="noopener  noreferrer" className="bold">Behance</a>
                             </li>
-                            <li>
-                                <a href="" >Facebook</a>
+                            <li className="my-5 py-5">
+                                <a href="https://www.facebook.com/paritosh.kumar.20" target="_blank" rel= "noopener noreferrer" className="bold">Facebook</a>
+                            </li>
+                            <li className="my-5 py-5">
+                                <a href="https://codepen.io/teslaLdead" target="_blank" rel="noopener noreferrer"  className="bold">CodePen</a>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="col-1 col-m-4">
                         <div className="section-heading">
                             Write to me
                         </div>
                     </div>
-                    <div>
-                        <form>
-                            <div>
-                                <label>
+                    <div className="col-2 col-m-4">
+                        <form id="contact-form">
+                            <div >
+                                <label className="bold">
                                     Subject
                                 </label>
+                                <br/>
                                 <input type="text" />
                             </div>
-                            <div>
-                                <label>
+                            <div className="my-5">
+                                <label className="bold">
                                     Message
                                 </label>
-                                <input type="paragraph" />
+                                <br/>
+                                <input type="textarea" />
                             </div>
                             <div>
                                 <button>Send</button>

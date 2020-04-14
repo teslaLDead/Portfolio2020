@@ -18,6 +18,10 @@ img{
     display: flex;
   }
 
+.d-none{
+  display: none;
+}
+
  .row{
    display: flex;
    flex-wrap: wrap;

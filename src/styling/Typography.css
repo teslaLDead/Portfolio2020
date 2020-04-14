@@ -167,5 +167,47 @@ and (min-width : 1659px) {
   }
 }
 
+@keyframes fadeInText{
+  from{
+    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
+  }
 
+  to{
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+}
 
+.fadeInText span{
+  animation-name: fadeInText;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-iteration-count: once;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes weirdAnimation{
+  0%{
+    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
+  }
+  20%{
+    clip-path: polygon(0% 0%, 0% 100%, 1.81% 122.46%, 1.49% -49.44%);
+  }
+  40%{
+    clip-path: polygon(0% 0%, 0% 100%, 5.68% 158.42%, 7.16% -62.92%);
+  }
+  60%{
+    clip-path: polygon(0% 0%, 0% 100%, 8.45% 153.93%, 7.16% -62.92%);
+  }
+  100%{
+    clip-path: polygon(0% 0%, 0% 100%, 11.49% 140.45%, 12.21% -40.45%);
+  }
+  
+}
+
+.weirdAnimation{
+  animation-name: weirdAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}

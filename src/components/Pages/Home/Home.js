@@ -3,9 +3,16 @@ import PortflioViewer from '../../CommonComponents/PortfolioViewer/PortfolioView
 import BlogThumbnail from "../../CommonComponents/BlogThumbnail/BlogThumbnail";
 import techAdventurerIllustration from './assets/tech-adventurer illustration.svg';
 import blogWritingIllustration from './assets/blog writing illustration.svg';
+// import TextFadeIn from '../../CommonComponents/AnimationComponents/TextAnimations/TextFadeIn';
 class Home extends React.Component{
     state={
 
+    }
+
+    componentDidMount=()=>{
+        window.addEventListener('scroll',function(e) {
+            // console.log(e)
+        })
     }
 
     render(){
@@ -15,12 +22,14 @@ class Home extends React.Component{
                 <div className="section-heading">
                     Tech Adventurer
                 </div>
+                {/* <TextFadeIn> */}
                 <h1 className="vertical-text-break lg-line-height">
                     <span>Passion for </span>
                     <span>creating</span>
                     <span>remarkable </span>
                     <span>digital products</span>
                 </h1>
+                {/* </TextFadeIn > */}
                 <p className="medium-font xl-line-height col-offset-3 col-m-offset-0">
                     Creating and working on <br/>
                     innovative and eye-catching <br/>
@@ -58,10 +67,12 @@ class Home extends React.Component{
                 <div className="section-heading">
                     Notable Projects 
                 </div>
+                {/* <TextFadeIn> */}
                 <h2 className="my-5">
                     Thinking and creating innovative <br/>
                     solutions for big and small problems.
                 </h2>
+                {/* </TextFadeIn> */}
             </div>
             <div className="mb-200px" style={{zIndex:"0",position:"relative"}}>
             <PortflioViewer />
