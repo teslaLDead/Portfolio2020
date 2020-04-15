@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import ContactForm from "./ContactForm";
 
 class Contact extends React.Component{
     constructor(props){
@@ -25,7 +26,7 @@ class Contact extends React.Component{
     render(){
         return(
             <div className="dark-theme">
-                <div className="section-heading">
+                <div className="section-heading mt-5">
                     Contact
                 </div>
                 <h1>
@@ -55,33 +56,13 @@ class Contact extends React.Component{
                             </li>
                         </ul>
                     </div>
-                    <div className="col-1 col-m-4">
-                        <div className="section-heading">
-                            Write to me
-                        </div>
-                    </div>
                     <div className="col-2 col-m-4">
-                        <form id="contact-form">
-                            <div >
-                                <label className="bold">
-                                    Subject
-                                </label>
-                                <br/>
-                                <input type="text" />
-                            </div>
-                            <div className="my-5">
-                                <label className="bold">
-                                    Message
-                                </label>
-                                <br/>
-                                <input type="textarea" />
-                            </div>
-                            <div>
-                                <button>Send</button>
-                            </div>
-                            
-                        </form>
+                        <div className="section-heading">
+                            Start a Conversation
+                        </div>
+                        <ContactForm />
                     </div>
+                    
                 </div>
             </div>
         )
