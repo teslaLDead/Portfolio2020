@@ -144,7 +144,7 @@ class ContactForm extends React.Component{
                          <img id="contact-form-next-button" src={nextButton} alt="next form element" className="pointer" onClick={this.nextFormElement}/>
                      </div>
                      <div className="d-flex justify-content-space-between">
-                     <p className="contact-form-instructions ">
+                     <p className="contact-form-instructions d-m-none">
                  Press <span>ENTER</span> for NEXT | <span>ENTER+SHIFT</span> for PREV
                  </p>
                  <p className="contact-form-instructions">
