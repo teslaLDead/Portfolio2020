@@ -14,20 +14,23 @@ function Menu(props){
     }
 
     return(
-        <div id="menu" className={menuClass}>
-            <div id="nav-links-container">
+        <div id="menu" className={menuClass} onClick={()=>{
+            props.toggleMenu();
+            props.toggleCurtain();
+        }}>
+            <div id="nav-links-container" >
                 {/* navigation links container */}
                 <div>
-                    <Link to="/about" className="menu-links">About</Link>
+                    <Link to="/about"  className="menu-links">About</Link>
                 </div>
                 <div>
-                    <Link to="/work" className="menu-links">Work</Link>
+                    <Link to="/work"  className="menu-links">Work</Link>
                 </div>
                 <div>
-                    <Link to="/blog" className="menu-links">Blog</Link>
+                    <Link to="/blog"  className="menu-links">Blog</Link>
                 </div>
                 <div>
-                    <Link to="/contact" className="menu-links">Contact</Link>
+                    <Link to="/contact"  className="menu-links">Contact</Link>
                 </div>
             </div>
             <div>
