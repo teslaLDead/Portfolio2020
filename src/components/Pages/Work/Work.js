@@ -1,10 +1,14 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import PortfolioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
 
 class Work extends React.Component{
     render(){
         return(
             <div className="dark-theme">
+                <Helmet>
+                    <title>Work | FullStack Develoment | UI/UX Design | Frontend & Backend</title>
+                </Helmet>
                 <header>
                     <div className="section-heading">
                       Work  

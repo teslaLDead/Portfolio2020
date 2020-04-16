@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import resume from './Paritosh_Kumar_Resume.pdf';
 import fullstack from './svg_assets/fullstack.svg';
 import frontend from './svg_assets/frontend.svg';
@@ -35,6 +36,9 @@ class About extends React.Component{
         // this.props.toggleCurtain();
     return(
         <div className="dark-theme">
+            <Helmet>
+                <title>About Paritosh Kumar</title>
+            </Helmet>
             <header className="hv-100">
                 <div className="section-heading">
                     About

@@ -1,10 +1,14 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import BlogThumbnail from '../../CommonComponents/BlogThumbnail/BlogThumbnail';
 
 class BlogHome extends React.Component{
     render(){
         return(
             <div className="dark-theme my-5">
+                <Helmet>
+                    <title>Thoughs of Paritosh Kumar</title>
+                </Helmet>
                 <header>
                     <div className="section-heading">
                         Blog

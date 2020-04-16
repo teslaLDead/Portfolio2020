@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import "./Contact.css";
 import ContactForm from "./ContactForm";
 
@@ -26,6 +27,9 @@ class Contact extends React.Component{
     render(){
         return(
             <div className="dark-theme">
+                <Helmet>
+                    <title>Contact Paritosh Kumar</title>
+                </Helmet>
                 <div className="section-heading mt-5">
                     Contact
                 </div>
