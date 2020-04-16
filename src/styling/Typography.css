@@ -19,6 +19,13 @@
   color: #7A52E9;
 }
 
+.color-white{
+  color:white;
+}
+.color-black{
+  color: black;
+}
+
 .font-size-small{
   font-size: small;
 }

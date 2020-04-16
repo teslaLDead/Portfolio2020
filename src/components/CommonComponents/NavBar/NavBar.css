@@ -61,3 +61,7 @@
 #menu ul a:hover{
     color: #abc629e0;
 }
+
+.active-navlink{
+    color: #abc629e0;
+}

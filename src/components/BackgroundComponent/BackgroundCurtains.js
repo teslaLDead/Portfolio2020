@@ -2,22 +2,22 @@ import React from "react";
 import './BackgroundCurtain.css';
 function BackgroundCurtain(props){
     
-    let curtainClass=props.curtainState;
-    console.log(curtainClass)
+    let curtainclassName=props.curtainState;
+    console.log(curtainclassName)
     return (
       
-        <div id="background" class={`${curtainClass}-curtain`}>
+        <div id="background" className={`${curtainclassName}-curtain`}>
         
-        <div class="left-border"></div>
+        <div className="left-border"></div>
 
         
-        <div class="container">
-            <div class="curtain"></div>
-            <div class="curtain"></div>
-            <div class="curtain"></div>
-            <div class="curtain"></div>
+        <div className="container">
+            <div className="curtain"></div>
+            <div className="curtain"></div>
+            <div className="curtain"></div>
+            <div className="curtain"></div>
         </div>
-        <div class="right-border"></div>
+        <div className="right-border"></div>
         
       </div>
     )

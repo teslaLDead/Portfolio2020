@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import PortflioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
 import BlogThumbnail from "../../CommonComponents/BlogThumbnail/BlogThumbnail";
 import techAdventurerIllustration from './assets/tech-adventurer illustration.svg';
@@ -20,6 +21,9 @@ class Home extends React.Component{
         return(
         <div className="dark-theme">
             <header className="hv-100 d-flex flex-column">
+                <Helmet>
+                    <title>Paritosh Kumar - Full Stack Developer and UI/UX Designer</title>
+                </Helmet>
                 <div className="section-heading">
                     Tech Adventurer
                 </div>

@@ -46,6 +46,10 @@ img{
   .align-items-center{
     align-items: center;
   }
+  .align-items-baseline{
+    align-items: baseline;
+  }
+
 .justify-content-space-between{
     justify-content: space-between;
   }

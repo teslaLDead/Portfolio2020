@@ -1,3 +1,6 @@
 .blog-thumbnail{
     max-width: 300px;
 }
+.blog-thumbnail a{
+    color: inherit;
+}

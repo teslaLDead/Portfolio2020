@@ -55,7 +55,7 @@ import resume from './Paritosh_Kumar_Resume.pdf';
                     <a href="https://codepen.io/teslaLdead" target="_blank" rel="noopener noreferrer" className="mx-5">CodePen</a>
                 </div>
                 <div className="text-center">
-                    <p className="dim-text font-size-small">Made with &#60;&#92;&#62; by Paritosh Kumar. Circa 2020.</p>
+                    <p className="dim-text font-size-small">Made with &#60;&#92;&#62; and &hearts; by Paritosh Kumar. Circa 2020.</p>
                 </div>
     
             </div>

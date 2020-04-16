@@ -19,6 +19,9 @@ import Blog from './components/Pages/Blog/BlogHome';
 import BlogPost from './components/Pages/Blog/BlogPost';
 import Footer from './components/CommonComponents/Footer/Footer';
 import Contact from './components/Pages/Contact/Contact';
+import Page404 from './components/CommonComponents/404Page/404Page';
+import BlogCategoryPage from './components/Pages/Blog/BlogCategoryPage';
+
 
 class App extends React.Component {
 
@@ -80,9 +83,10 @@ class App extends React.Component {
           } />
           <Route path="/work" exact component={Work} />
           <Route path="/blog" exact component={Blog} />
-          <Route path="/blogs/:blogPostUrl" exact component={BlogPost} />
+          <Route path="/blog/category/:blogCategory" exact component={BlogCategoryPage} />
+          <Route path="/blog/:blogPostUrl" exact component={BlogPost} />
           <Route path="/contact" exact component={Contact}/>
-
+          <Route path="*" component={Page404} />
         </Switch>
         <Footer />
      

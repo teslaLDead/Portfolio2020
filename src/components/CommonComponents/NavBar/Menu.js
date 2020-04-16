@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "./NavBar.css";
 function Menu(props){
 
@@ -21,16 +21,16 @@ function Menu(props){
             <div id="nav-links-container" >
                 {/* navigation links container */}
                 <div>
-                    <Link to="/about"  className="menu-links">About</Link>
+                    <NavLink to="/about"  className="menu-links" activeClassName="active-navlink">About</NavLink>
                 </div>
                 <div>
-                    <Link to="/work"  className="menu-links">Work</Link>
+                    <NavLink to="/work"  className="menu-links" activeClassName="active-navlink">Work</NavLink>
                 </div>
                 <div>
-                    <Link to="/blog"  className="menu-links">Blog</Link>
+                    <NavLink to="/blog"  className="menu-links" activeClassName="active-navlink">Blog</NavLink>
                 </div>
                 <div>
-                    <Link to="/contact"  className="menu-links">Contact</Link>
+                    <NavLink to="/contact"  className="menu-links" activeClassName="active-navlink">Contact</NavLink>
                 </div>
             </div>
             <div>
