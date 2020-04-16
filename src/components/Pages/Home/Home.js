@@ -3,6 +3,7 @@ import PortflioViewer from '../../CommonComponents/PortfolioViewer/PortfolioView
 import BlogThumbnail from "../../CommonComponents/BlogThumbnail/BlogThumbnail";
 import techAdventurerIllustration from './assets/tech-adventurer illustration.svg';
 import blogWritingIllustration from './assets/blog writing illustration.svg';
+import { Link } from "react-router-dom";
 // import TextFadeIn from '../../CommonComponents/AnimationComponents/TextAnimations/TextFadeIn';
 class Home extends React.Component{
     state={
@@ -110,23 +111,23 @@ class Home extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="light-theme position-relative">
-                    <div className="section-heading">
+                <div className="py-5">
+                    <div className="section-heading my-5">
                         Know me more
                     </div>
-                    <div>
+                    <div className="row my-5">
                         {/* next page links */}
-                        <div>
-                            <a href="">
+                        <div className="detailed-nav-link col-1 col-m-2">
+                            <Link to="/about">
                                 <p>About</p>
                                 <p>See what I can do</p>
-                            </a>
+                            </Link>
                         </div>
-                        <div>
-                            <a href="">
+                        <div className="detailed-nav-link col-1 col-m-2">
+                            <Link to="/work">
                                 <p>Work</p>
                                 <p>See what I have done</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

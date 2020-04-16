@@ -1,5 +1,31 @@
 import React from "react";
 import resume from './Paritosh_Kumar_Resume.pdf';
+import fullstack from './svg_assets/fullstack.svg';
+import frontend from './svg_assets/frontend.svg';
+import backend from './svg_assets/backend.svg';
+import uiux from './svg_assets/uiux.svg';
+
+// tech asset imports 
+
+import adobexd from "./tech assets/adobexd.png";
+import ai from "./tech assets/ai.png";
+import aws from "./tech assets/aws.png";
+import axure from "./tech assets/axure.png";
+import django from "./tech assets/django.png";
+import gcp from "./tech assets/gcp.png";
+import graphql from "./tech assets/graphql.png";
+import indesign from "./tech assets/indesign.png";
+import invision from "./tech assets/invision.png";
+import marvelapp from "./tech assets/marvelapp.png";
+import nodejs from "./tech assets/nodejs.png";
+import ps from "./tech assets/ps.png";
+import python from "./tech assets/python.png";
+import react from "./tech assets/react.png";
+// import  from "./tech assets/.png";
+// import  from "./tech assets/.png";
+
+
+
 
 class About extends React.Component{
 
@@ -28,6 +54,9 @@ class About extends React.Component{
                         <h3>
                             Full Stack
                         </h3>
+                        <div className="py-5">
+                            <img src={fullstack} alt="full stack" />
+                        </div>
                         <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
@@ -36,6 +65,9 @@ class About extends React.Component{
                         <h3>
                             Frontend
                         </h3>
+                        <div className="py-5">
+                            <img src={frontend} alt="frontend" />
+                        </div>
                         <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
@@ -44,6 +76,9 @@ class About extends React.Component{
                         <h3>
                             UI/UX Design
                         </h3>
+                        <div className="py-5">
+                            <img  src={uiux} alt="u i u x design" />
+                        </div>
                         <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
@@ -52,6 +87,9 @@ class About extends React.Component{
                         <h3>
                             Backend
                         </h3>
+                        <div className="py-5">
+                            <img  src={backend} alt="backend" />
+                        </div>
                         <p className="pr-2">
                         Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
                         </p>
@@ -59,9 +97,9 @@ class About extends React.Component{
                 </div>
                 
             </div>
-            <div className="bg-white light-theme">
+            <div className="bg-white light-theme py-lg-5 my-lg-100px">
                 {/* white background section  */}
-                <div className="section-heading">
+                <div className="section-heading py-5 my-5">
                     Tech Explored
                 </div>
                 <div className="row ">
@@ -70,45 +108,66 @@ class About extends React.Component{
                         <p className="bold">
                             Development
                         </p>
-                        <div>
+                        <div className="row tech-image-grid">
                             {/* image grid */}
                             <div>
-                                <img src="" alt="" />
+                                <img title="ReactJs" src={react} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Node.Js" src={nodejs} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Django" src={django} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Python" src={python} alt="" />
                             </div>
+                            <div>
+                                <img title="Amazon Web Services" src={aws} alt="" />
+                            </div>
+                            <div>
+                                <img title="Google Cloud Platform" src={gcp} alt="" />
+                            </div>
+                            <div>
+                                <img title="GraphQL" src={graphql} alt="" />
+                            </div>
+                            {/* <div>
+                                <img title="" src={python} alt="" />
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-2 col-m-4">
                         <p className="bold">
                             Design
                         </p>
-                        <div>
+                        <div className="row tech-image-grid">
                             {/* image grid */}
                             <div>
-                                <img src="" alt="" />
+                                <img title="AdobeXD" src={adobexd} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Adobe Photoshop" src={ps} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Adobe Illustrator" src={ai} alt="" />
                             </div>
                             <div>
-                                <img src="" alt="" />
+                                <img title="Adobe Indesign" src={indesign} alt="" />
+                            </div>
+                            <div>
+                                <img title="InvisionApp" src={invision} alt="" />
+                            </div>
+                            <div>
+                                <img title="AxureRP" src={axure} alt="" />
+                            </div>
+                            <div>
+                                <img title="MarvelApp" src={marvelapp} alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="my-5">
+            <div className="my-5 mb-lg-100px">
                 <div className="section-heading">
                     Breif Overview
                 </div>
