@@ -4,9 +4,9 @@ import portfolioImage from './kodeglobe header screenshot.png';
 // thinking of populating this viewer with js file
 
 //passing object in the function to populate the various fields
-function PortfolioViewer(){
+function PortfolioViewer(props){
     return(
-        <div className="position-relative">
+        <div className={`position-relative portfolio-container ${props.className}`}>
             <div className="portfolio-main-background">
                
             </div>

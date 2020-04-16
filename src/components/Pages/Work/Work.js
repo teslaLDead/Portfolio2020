@@ -25,6 +25,8 @@ class Work extends React.Component{
                 <div className="my-5">
                     {/* for loop will be inserted here to render the portfolio viewer for all the work */}
                     <PortfolioViewer />
+                    <PortfolioViewer className="portfolio-right"/>
+                    <PortfolioViewer />
                 </div>
             </div>
         )

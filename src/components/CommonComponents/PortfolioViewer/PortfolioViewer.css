@@ -1,3 +1,10 @@
+.portfolio-container{
+    margin: 25% 0;
+}
+
+.portfolio-container:first-of-type{
+margin-top: 0;
+}
 .portfolio-case-heading{
     font-size: 48px;
     font-weight: 700;
@@ -50,4 +57,17 @@
     .portfolio-work-heading{
         font-size: 14px;
     }
+}
+
+.portfolio-right>div:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.portfolio-right .portfolio-description{
+    margin-left: 55px;
+    margin-right: auto;
+}
+.portfolio-right .portfolio-main-background{
+    right: -25%;
+    left: auto;
 }
