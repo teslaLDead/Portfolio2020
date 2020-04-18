@@ -3,6 +3,10 @@ import {Helmet} from "react-helmet";
 import PortfolioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
 
 class Work extends React.Component{
+    componentDidMount=()=>{
+        // api call will have to be made here
+        // the data from the api call will populate the portfolio viewers
+    }
     render(){
         return(
             <div className="dark-theme">

@@ -15,6 +15,7 @@
 
 .close-curtain{
   z-index: -1;
+  /* z-index: 2; */
 }
 
 .open-curtain{
@@ -58,6 +59,7 @@
   background:white;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .close-curtain .left-border::before,.close-curtain .right-border::before,.close-curtain .curtain::before{

@@ -21,6 +21,7 @@ import Footer from './components/CommonComponents/Footer/Footer';
 import Contact from './components/Pages/Contact/Contact';
 import Page404 from './components/CommonComponents/404Page/404Page';
 import BlogCategoryPage from './components/Pages/Blog/BlogCategoryPage';
+// import './components/Animation';
 
 
 class App extends React.Component {
