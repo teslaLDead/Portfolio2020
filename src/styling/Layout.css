@@ -91,7 +91,7 @@ img{
     }
 
     .m-flex-direction-col-reverse{
-      flex-direction: column-reverse;
+      flex-direction: column-reverse!important;
     }
      
     /* width classes for mobile */

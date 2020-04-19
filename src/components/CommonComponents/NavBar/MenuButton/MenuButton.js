@@ -4,9 +4,9 @@ import React from "react";
 function MenuButton(props){
 
     var menuText="menu";
-    var transform1="translate(0 10)";
-    var transform2="translate(0 13)";
-    var transform3="translate(0 18)";
+    var transform1="translate(15 10)";
+    var transform2="translate(15 13)";
+    var transform3="translate(15 18)";
     if (props.menuActive){
         menuText="close";
         

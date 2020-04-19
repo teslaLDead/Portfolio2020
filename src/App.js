@@ -37,11 +37,13 @@ class App extends React.Component {
   toggleMenu=()=>{
     if (this.state.menuActive)
     {
+      document.body.style.overflowY="scroll";
       this.setState({
         menuActive:false
       })
     }
     else{
+      document.body.style.overflowY="hidden";
       this.setState({
         menuActive:true
       })
