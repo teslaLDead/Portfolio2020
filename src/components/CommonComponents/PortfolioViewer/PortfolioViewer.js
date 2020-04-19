@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 function PortfolioViewer(props){
     return(
         <div className={`position-relative portfolio-container ${props.className}`}>
-            <Fade left>
+            <Fade left={!props.alt} right={props.alt}>
                 <div className="portfolio-main-background"> </div>
             </Fade>
             <div className="d-flex m-flex-direction-col-reverse">
@@ -43,10 +43,10 @@ function PortfolioViewer(props){
                         <p><a href="" className="medium-font">Website Link</a></p>
                     </Fade>
                 </div>
-                <Fade left distance={"500px"} duration={2000} delay={1000}>
+                <Fade left={!props.alt} right={props.alt} distance={"500px"} duration={2000} delay={1000}>
                 <div className="portfolio-image-container">
                     <div>
-                        <Fade left distance={"10px"} delay={1600} duration={2000}>
+                        <Fade left={!props.alt} right={props.alt} distance={"10px"} delay={1600} duration={2000}>
                             <img src={portfolioImage} alt=""/>
                         </Fade>
                     </div>

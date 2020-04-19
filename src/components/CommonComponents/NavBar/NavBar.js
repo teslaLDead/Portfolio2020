@@ -15,7 +15,7 @@ function NavBar(props){
                 props.toggleCurtain();
                 props.toggleMenu();
                 }}>
-                <MenuBtton />
+                <MenuBtton menuActive={props.menuActive}/>
             </div>
 
             <Menu menuActive={props.menuActive} toggleCurtain={props.toggleCurtain} toggleMenu={props.toggleMenu}/>

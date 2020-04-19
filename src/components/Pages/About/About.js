@@ -54,7 +54,7 @@ class About extends React.Component{
                 </Fade>
             </header>
             <div className="my-5">
-                <Fade dela={200}>
+                <Fade delay={200}>
                 <div className="section-heading my-5">
                     Areas of Work
                 </div>  

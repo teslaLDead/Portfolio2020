@@ -2,6 +2,7 @@ import React from "react";
 import {Helmet} from "react-helmet";
 import FeaturedSection from "./FeaturedSection";
 import BlogCategoryNav from "./BlogCategoryNav";
+import Fade from 'react-reveal/Fade';
 
 class BlogHome extends React.Component{
     render(){
@@ -11,17 +12,23 @@ class BlogHome extends React.Component{
                     <title>Thoughs of Paritosh Kumar</title>
                 </Helmet>
                 <header>
+                    <Fade>
                     <div className="section-heading">
                         Blog
                     </div>
+                    </Fade>
+                    <Fade top distance="50px" duration={1500} delay={500}>
                     <h1 className="py-4">
                     Thoughts to inspire 
                     </h1>
+                    </Fade>
                     <div className="row">
                         <div className="col-1 col-m-4">
+                        <Fade delay={200}>
                             <p>
                                 <b>Topics</b>
                             </p>
+                            </Fade>
                         </div>
                         <div className="col-2 col-m-4">
                             {/* blog category navigation section  */}
@@ -29,10 +36,12 @@ class BlogHome extends React.Component{
                         </div>
                         <div className="col-1 col-m-4">
                             {/* quote  */}
+                            <Fade delay={500}>
                             <p>
                             &quot; Man cannot discover new oceans unless he has the courage to lose sight of the shore.&quot;   - Andre Gide
 
                             </p>
+                            </Fade>
                         </div>
                     </div>
                     

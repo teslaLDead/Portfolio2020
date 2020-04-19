@@ -43,7 +43,7 @@ function Menu(props){
                 </div>
             </div>
             <div>
-                <ul className="d-flex">
+                <ul className="row">
                     <li>
                         <Fade delay={200} left distance="5px"><a href="https://github.com/teslaLDead" target="_blank" rel="noopener noreferrer" className="mr-5">Github</a></Fade>
                     </li>

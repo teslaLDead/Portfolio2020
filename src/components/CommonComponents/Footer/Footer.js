@@ -73,7 +73,7 @@ import { FadeInHeading } from "../../Animation";
                     </div>
                 </div>
                
-                <div className="my-5">
+                <div className="row my-5">
                     <Fade left distance={"50px"} delay={500}>
                         <a href="https://github.com/teslaLDead" target="_blank" rel="noopener noreferrer" className="mr-5">Github</a>
                     </Fade>

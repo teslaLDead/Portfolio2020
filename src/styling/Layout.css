@@ -68,8 +68,23 @@ img{
   .col-offset-3{
     margin-left: 75%;
   }
+  .tech-image-grid div{
+    min-width: 100px;
+    min-height: 120px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+  }
 
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .tech-image-grid{
+      justify-content: space-between;
+    }
+    .tech-image-grid div{
+      min-width: 50%;
+      margin-right: 0;
+    }
 
     .d-m-none{
       display: none;
@@ -240,13 +255,7 @@ img{
     padding-right: 2em;
   }
 
-  .tech-image-grid div{
-    min-width: 100px;
-    min-height: 120px;
-    margin-right: 100px;
-    display: flex;
-    align-items: center;
-  }
+  
 
   .active-left-mask{
     position: relative;
