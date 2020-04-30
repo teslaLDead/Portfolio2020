@@ -10,6 +10,7 @@ import BackgroundCurtain from './components/BackgroundComponent/BackgroundCurtai
 import './styling/Layout.css';
 import './styling/Typography.css';
 import './App.css';
+// import Cursor from './components/CommonComponents/CustomMouse/Cursor';
 
 // page imports for react router dom
 import Home from './components/Pages/Home/Home';
@@ -73,7 +74,7 @@ class App extends React.Component {
     // <Router>
     <div className="App ">
       {/* main will contain all the content and will provide side margins to the child components */}
-     
+     {/* <Cursor /> */}
         <BackgroundCurtain curtainState={this.state.curtainState}/>
         <NavBar toggleCurtain={this.toggleCurtain} menuActive={this.state.menuActive} toggleMenu={this.toggleMenu}/>
         <Switch>

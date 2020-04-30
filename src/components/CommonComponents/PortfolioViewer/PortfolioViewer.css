@@ -39,6 +39,7 @@ margin-top: 0;
 }
 .portfolio-description{
     margin-right: 55px;
+    max-width: 30%;
 }
 
 .portfolio-right>div:nth-child(2){
@@ -58,6 +59,7 @@ margin-top: 0;
     .portfolio-description{
         margin-left: 50px;
         margin-right: 0;
+        max-width: 100%;
     }
     .portfolio-container{
         margin: 50% 0;
