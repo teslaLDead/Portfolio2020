@@ -12,10 +12,10 @@ class Work extends React.Component{
           const  works=[
                 {
                     "title":"UI/UX Design and Full Stack Development ",
-                    "heading":"Created clean looking website for KodeGlobe",
+                    "heading":"KodeGlobe: Digital Solutions",
                     "paragraphs":[
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.",
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks."
+                        "Create a clean looking, attractive, and SEO friendly website from scratch. ",
+                        "Helped to conceptualize, design, develop and deploy the website. Took it from an idea to the final product."
                     ],
                     "link_title":"KodeGlobe Wesbite",
                     "link_url":"https://www.kodeglobe.com/",
@@ -25,10 +25,10 @@ class Work extends React.Component{
                 },
                 {
                     "title":"Frontend Development and Design",
-                    "heading":"Depression awareness website",
+                    "heading":"Social Issue Awareness Website",
                     "paragraphs":[
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.",
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks."
+                        "Create a website for increasing awareness about depression. Designed and develoed cool animations and visuals.",
+                        "Personal project for experimenting with new javascript features."
                     ],
                     "link_title":"Website Link",
                     "link_url":"https://talkaboutdepression.info",
@@ -38,33 +38,35 @@ class Work extends React.Component{
                 },
                 {
                     "title":"Frontend Development and Design",
-                    "heading":"Gamedoora: Collaboration Platform",
+                    "heading":"Gamedoora: Collaboration and Social Platform",
                     "paragraphs":[
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.",
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks."
+                        "Designed a collaboration platform for game developers, animators and visual artists.",
+                        "Helped suggest new features and ideas to improve the product. Developed various frontend components."
                     ],
                     "link_title":"See Design",
-                    "link_rul":"https://www.behance.net/gallery/96160011/Work-Collaboration-Platform",
+                    "link_url":"https://www.behance.net/gallery/96160011/Work-Collaboration-Platform",
                     "main_background":"transparent linear-gradient(236deg, #366AF8 0%, #2237C1 100%) 0% 0% no-repeat padding-box",
                     "image_url":require('./Assets/gamedoora.png'),
                     "secondary_background":"transparent linear-gradient(242deg, #5C90F5 0%, #006FFF 100%) 0% 0% no-repeat padding-box"
                 },
                 {
                     "title":"UI/UX Design",
-                    "heading":"Mereexams: College Admissions Made Easy",
+                    "heading":"MereExams: College Admissions Made Easy",
                     "paragraphs":[
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.",
-                        "We create a platform to centralizing the moderation of homogeneous and heterogeneous networks."
+                        "Redesigned the entire website. Helped in making the product more user friendly.",
+                        "Collaborated with the entire team to understand and create. Prototyped and iterated the designs."
                     ],
-                    "link_title":"Work Description",
+                    "link_title":"Work Showcase",
                     "link_url":"https://www.behance.net/gallery/96160011/Work-Collaboration-Platform",
-                    "main_background":"transparent linear-gradient(236deg, #366AF8 0%, #2237C1 100%) 0% 0% no-repeat padding-box",
+                    "main_background":"linear-gradient(142deg, rgb(247, 37, 37) 16%, rgb(191, 21, 21) 58%) 35% 31% no-repeat padding-box padding-box transparent",
                     "image_url":require('./Assets/mereexams.png'),
-                    "secondary_background":"transparent linear-gradient(242deg, #5C90F5 0%, #006FFF 100%) 0% 0% no-repeat padding-box"
+                    "secondary_background":"linear-gradient(68deg, rgb(238, 51, 51) 0%, rgb(208, 29, 29) 102%) 0% 0% no-repeat padding-box padding-box transparent"
                 }
-            ]
+            ];
         
-        
+            works.forEach(element => {
+                console.log(element)
+            })
        
         return(
             <div className="dark-theme">

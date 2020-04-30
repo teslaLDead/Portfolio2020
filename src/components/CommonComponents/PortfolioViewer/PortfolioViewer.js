@@ -7,7 +7,15 @@ import Fade from "react-reveal/Fade";
 //passing object in the function to populate the various fields
 function PortfolioViewer(props){
 
-    console.log(props.data.image_url)
+    // console.log(props.data)
+    
+    const paragraphs = props.data.paragraphs.map((el)=>
+        <Fade top distance={"10px"} delay={1400} duration={1500}>
+                    <p className="portfolio-para">
+                      {el}
+                    </p>
+                    </Fade>
+    )
 
     
 
@@ -37,7 +45,9 @@ function PortfolioViewer(props){
                     </Fade>
 
                     
-                    <Fade top distance={"10px"} delay={1400} duration={1500}>
+                    {paragraphs}
+
+                    {/* <Fade top distance={"10px"} delay={1400} duration={1500}>
                     <p className="portfolio-para">
                         We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.
                     </p>
@@ -47,10 +57,10 @@ function PortfolioViewer(props){
                     
                         We create a platform to centralizing the moderation of homogeneous and heterogeneous networks.
                     </p>
-                    </Fade>
+                    </Fade> */}
                     {/* {props.data.paragraphs} */}
                     <Fade top distance={"10px"} delay={1600}>
-                <p><a href={props.link_url} className="medium-font">{props.data.link_title}</a></p>
+                <p><a href={props.data.link_url} target="_blank" className="medium-font">{props.data.link_title}</a></p>
                     </Fade>
                 </div>
                 <Fade left={!props.alt} right={props.alt} distance={"500px"} duration={2000} delay={1000}>

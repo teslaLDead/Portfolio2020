@@ -75,7 +75,7 @@ class About extends React.Component{
                         </div>
                         <Fade delay={1000} duration={1500}>
                         <p className="pr-2">
-                        Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
+                        Take broad, conceptual ideas and turn them into functional architecture and polished products to solve customers use cases.
                         </p>
                         </Fade>
                        
@@ -94,7 +94,7 @@ class About extends React.Component{
                         </div>
                         <Fade delay={1000} duration={1500}>
                         <p className="pr-2">
-                        Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
+                        Creating pixel perfect UI elements with responsive design in mind. Create refreshing interactions that capture the mind of the user.
                         </p>
                         </Fade>
                     </div>
@@ -128,7 +128,7 @@ class About extends React.Component{
                         </div>
                         <Fade delay={1000} duration={1500}>
                         <p className="pr-2">
-                        Analyzing the requirements of the project thoroughly. Delivering impeccable designs that capture the attention of the user with user-friendliness and rational design creation.
+                        Buil highly scalable, robust, and fault-tolerant backend services that support your unique rate-of-growth requirements. 
                         </p>
                         </Fade>
                     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import PortflioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
+import PortfolioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
 import BlogThumbnail from "../../CommonComponents/BlogThumbnail/BlogThumbnail";
 import techAdventurerIllustration from './assets/tech-adventurer illustration.svg';
 import blogWritingIllustration from './assets/blog writing illustration.svg';
@@ -120,7 +120,19 @@ class Home extends React.Component{
                 {/* </TextFadeIn> */}
             </div>
             <div className="mb-200px" style={{zIndex:"0",position:"relative"}}>
-            <PortflioViewer />
+            <PortfolioViewer data= {{
+                    "title":"UI/UX Design and Full Stack Development ",
+                    "heading":"KodeGlobe: Digital Solutions",
+                    "paragraphs":[
+                        "Create a clean looking, attractive, and SEO friendly website from scratch. ",
+                        "Helped to conceptualize, design, develop and deploy the website. Took it from an idea to the final product."
+                    ],
+                    "link_title":"KodeGlobe Wesbite",
+                    "link_url":"https://www.kodeglobe.com/",
+                    "main_background":"transparent linear-gradient(236deg, #366AF8 0%, #2237C1 100%) 0% 0% no-repeat padding-box",
+                    "image_url":require('../Work/Assets/kodeglobe.png'),
+                    "secondary_background":"transparent linear-gradient(242deg, #5C90F5 0%, #006FFF 100%) 0% 0% no-repeat padding-box"
+                }}/>
             </div>
             
 

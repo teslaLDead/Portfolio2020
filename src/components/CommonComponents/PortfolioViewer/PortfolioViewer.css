@@ -34,7 +34,7 @@ margin-top: 0;
     z-index: -1;
 }
 .portfolio-para{
-    max-width: 270px;
+    max-width: 80%;
     line-height: 1.5em;
 }
 .portfolio-description{
@@ -56,6 +56,9 @@ margin-top: 0;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .portfolio-para{
+        max-width: 100%;
+    }
     .portfolio-description{
         margin-left: 50px;
         margin-right: 0;
