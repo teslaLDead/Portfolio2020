@@ -3,8 +3,12 @@ import placeholder from './thumnail-placeholder.png';
 import './BlogThumbnail.css';
 import {Link} from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import BlogThumbnailLoader from './BlogContentLoader';
 //the data again will be populated from dynamic sources
 export default function BlogThumbnail(props){
+ 
+    if (props.data && props.data.title!=undefined)
+   {
     return(
         <div className="blog-thumbnail">
                 <Link to={props.url}>
@@ -12,17 +16,23 @@ export default function BlogThumbnail(props){
 
             <Fade top delay={200} distance="50px" duration={1500}>
             <div>
-                <img src={placeholder} alt="" />
+                <img src={props.data.coverImage.url} alt="" />
             </div>
             </Fade>
             <Fade top delay={600} distance="10px">
             <p className="bold">
-                Font inspirations for portfolio pages
-                to make it more awesome
+               {props.data.title}
             </p>
             </Fade>
             </div>
                 </Link>
         </div>
     )
+}
+else{
+    console.log('yo')
+    return(
+        <BlogThumbnailLoader />
+    )
+}
 }

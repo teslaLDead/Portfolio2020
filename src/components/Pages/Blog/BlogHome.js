@@ -5,6 +5,47 @@ import BlogCategoryNav from "./BlogCategoryNav";
 import Fade from 'react-reveal/Fade';
 
 class BlogHome extends React.Component{
+
+    state = {
+        data:{},
+        postsLoaded:false
+    }
+
+    componentDidMount = () =>{
+        const query= `
+        {
+            posts {
+              id
+              slug
+              title
+              coverImage {
+                url
+              }
+            }
+          }
+          
+        `;
+        const url = "https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master";
+
+        const opts = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query })
+        }
+        console.log('fetch starts here')
+        fetch(url,opts)
+            .then(res=>res.json())
+            .then((data)=>{
+                console.log(data)
+                this.setState({
+                    data:data,
+                    postsLoaded:true
+                })
+            }
+            )
+            .catch(console.error)
+    }
+
     render(){
         return(
             <div className="dark-theme my-5">
@@ -46,7 +87,7 @@ class BlogHome extends React.Component{
                     </div>
                     
                 </header>
-                <FeaturedSection />
+                <FeaturedSection data={this.state.data} postsLoaded={this.state.postsLoaded}/>
             </div>
         )
     }
