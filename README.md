@@ -2,6 +2,8 @@
 
 A personal portfolio for the year 2020. 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a00aa87a-5819-465f-b284-56e0e7f6abb9/deploy-status)](https://app.netlify.com/sites/awesome-ardinghelli-657603/deploys)
+
 ## Motivation
 
 To create a portfolio highlighting my work and ideas. A space to present myself. The creation of this website will help me showcase my skills, create and maintain a blog and maybe help me get more work(jobs). Also this project will help me get more comfortable with creating websites and applications. This is a personal *development* challenge for me.
