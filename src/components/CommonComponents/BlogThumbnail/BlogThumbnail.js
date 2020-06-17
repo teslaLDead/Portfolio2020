@@ -11,7 +11,7 @@ export default function BlogThumbnail(props){
    {
     return(
         <div className="blog-thumbnail">
-                <Link to={props.url}>
+                <Link to={`blog/${props.data.slug}`}>
             <div>
 
             <Fade top delay={200} distance="50px" duration={1500}>

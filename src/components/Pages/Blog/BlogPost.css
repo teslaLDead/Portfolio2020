@@ -3,3 +3,39 @@
         font-size: 64px;
    
 }
+
+
+
+.blog-content{
+        max-width: 800px;
+        padding: 1.5em;
+        color: white;
+        border-radius: 8px;
+        background: rgb(34, 34, 37);
+}
+
+.blog-content .code-section p{
+        margin: 0;
+        display: flex;
+}
+
+.blog-content .code-section {
+        border-left: 2px solid white;
+        padding-left: 5px;
+}
+
+.blog-content  p {
+        letter-spacing: 0.2px;
+        font-size: medium;
+        margin: 2rem;
+        color: #f1f1f1;
+        line-height: 1.8rem;
+}
+
+.blog-content code {
+    background: #191a1e;
+    padding: 8px;
+    width: 100%;
+    
+}
+

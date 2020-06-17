@@ -3,9 +3,39 @@ import {Helmet} from "react-helmet";
 import FeaturedSection from "./FeaturedSection";
 import BlogCategoryNav from './BlogCategoryNav';
 import Fade from 'react-reveal/Fade';
-export default function BlogCategoryPage(props){
 
-    const BlogCategoryName="Web Development";
+export default class BlogCategoryPage extends React.Component{
+
+    state={
+        blogs:{},
+        blogsLoaded:false,
+        categoryURL:""
+
+    }
+
+    componentDidMount = () =>{
+
+        this.setState({
+            categoryURL:document.URL
+        })
+     
+    }
+
+    blogCategoryChange = (new_category) =>{
+        this.setState({
+            categoryURL:new_category
+        })
+    }
+
+    
+
+
+    render(){
+
+        let BlogCategoryName=this.state.categoryURL.split('/');
+        BlogCategoryName=BlogCategoryName[BlogCategoryName.length-1].split('_').join(" ")
+
+    
     return(
         <div className="dark-theme my-5 py-5">
             <Helmet>
@@ -28,7 +58,7 @@ export default function BlogCategoryPage(props){
                     </div>
                 
                     <div className="col-1 col-m-4">
-                        <BlogCategoryNav />
+                        <BlogCategoryNav blogCategoryChange={this.blogCategoryChange}/>
                     </div>
                 </div>
                 
@@ -37,5 +67,5 @@ export default function BlogCategoryPage(props){
 
             
         </div>
-    )
+    )}
 }

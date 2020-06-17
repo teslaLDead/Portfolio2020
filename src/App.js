@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Suspense,  lazy } from 'react';
 import {
   Switch,
   Route,
-  Link
+  BrowserRouter
 } from "react-router-dom";
 import ReactGA from 'react-ga';
 import NavBar from './components/CommonComponents/NavBar/NavBar';
@@ -10,18 +10,19 @@ import BackgroundCurtain from './components/BackgroundComponent/BackgroundCurtai
 import './styling/Layout.css';
 import './styling/Typography.css';
 import './App.css';
+import ScrollToTop from './components/CommonComponents/ScrollToTop/ScrollToTop';
 // import Cursor from './components/CommonComponents/CustomMouse/Cursor';
 
 // page imports for react router dom
-import Home from './components/Pages/Home/Home';
-import About from './components/Pages/About/About';
-import Work from './components/Pages/Work/Work';
-import Blog from './components/Pages/Blog/BlogHome';
-import BlogPost from './components/Pages/Blog/BlogPost';
-import Footer from './components/CommonComponents/Footer/Footer';
-import Contact from './components/Pages/Contact/Contact';
-import Page404 from './components/CommonComponents/404Page/404Page';
-import BlogCategoryPage from './components/Pages/Blog/BlogCategoryPage';
+const Home  = lazy(() => import('./components/Pages/Home/Home'));
+const About  = lazy(() => import('./components/Pages/About/About'));
+const Work  = lazy(() => import('./components/Pages/Work/Work'));
+const Blog  = lazy(() => import('./components/Pages/Blog/BlogHome'));
+const BlogPost  = lazy(() => import('./components/Pages/Blog/BlogPost'));
+const Footer  = lazy(() => import('./components/CommonComponents/Footer/Footer'));
+const Contact  = lazy(() => import('./components/Pages/Contact/Contact'));
+const Page404  = lazy(() => import('./components/CommonComponents/404Page/404Page'));
+const BlogCategoryPage  = lazy(() => import('./components/Pages/Blog/BlogCategoryPage'));
 // import './components/Animation';
 
 
@@ -65,6 +66,7 @@ class App extends React.Component {
     }
   }
   componentDidMount=()=>{
+    document.querySelector('#loader').style.display="none";
     ReactGA.initialize('UA-120664378-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
   }
@@ -73,10 +75,17 @@ class App extends React.Component {
   return (
     // <Router>
     <div className="App ">
+      
+<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
+<BackgroundCurtain curtainState={this.state.curtainState}/>
+<NavBar toggleCurtain={this.toggleCurtain} menuActive={this.state.menuActive} toggleMenu={this.toggleMenu}/>
+<ScrollToTop>
+<Suspense fallback={<div></div>}>
+      
       {/* main will contain all the content and will provide side margins to the child components */}
      {/* <Cursor /> */}
-        <BackgroundCurtain curtainState={this.state.curtainState}/>
-        <NavBar toggleCurtain={this.toggleCurtain} menuActive={this.state.menuActive} toggleMenu={this.toggleMenu}/>
+        
+        
         <Switch>
 
           <Route path="/" exact component={Home} />
@@ -94,9 +103,11 @@ class App extends React.Component {
         </Switch>
         <Footer />
      
-        {/* <BackgroundCurtain /> */}
+        </Suspense>
+        </ScrollToTop>
+        </BrowserRouter>
     </div>
-    // </Router>
+   
   );}
 }
 

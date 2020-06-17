@@ -29,13 +29,41 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <title>Paritosh Kumar - Full Stack Developer and UI/UX Designer</title>
+    <style>
+      body{
+        background:#191a1e;
+      }
+
+      #L9{
+        width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+  animation-name: rotateSVG;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+      }
+
+      @keyframes rotateSVG {
+        from{
+          transform: rotateZ('0deg');
+        }
+        to{
+          transform: rotateZ('360deg');
+        }
+      }
+      
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="h-100"></div>
-    
-     
+  <div id="loader" style="display: flex;height: 100%;width: 100%;justify-content: center; align-items: center;color: #191a1e;">
+    loading...
+  </div>
+   
     <!--Start of Tawk.to Script-->
+    
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
