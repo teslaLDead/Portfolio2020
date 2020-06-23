@@ -25,7 +25,7 @@ class BlogHome extends React.Component{
           }
           
         `;
-        const url = "https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master";
+        const url = process.env.REACT_APP_CMS_API;
 
         const opts = {
             method: "POST",
