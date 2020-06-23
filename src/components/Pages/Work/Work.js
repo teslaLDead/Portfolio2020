@@ -1,7 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import PortfolioViewer from '../../CommonComponents/PortfolioViewer/PortfolioViewer';
-import data from './data.json';
 class Work extends React.Component{
     componentDidMount=()=>{
         // api call will have to be made here

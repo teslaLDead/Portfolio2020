@@ -6,7 +6,6 @@ import techAdventurerIllustration from './assets/tech-adventurer illustration.sv
 import blogWritingIllustration from './assets/blog writing illustration.svg';
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import {FadeInHeading} from '../../Animation';
 // import {Spring} from 'react-spring/renderprops';
 // import TextFadeIn from '../../CommonComponents/AnimationComponents/TextAnimations/TextFadeIn';

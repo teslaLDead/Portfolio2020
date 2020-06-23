@@ -10,7 +10,7 @@ import { FadeInHeading } from "../../Animation";
  const Footer=(props)=>
  {
 
-    if (window.location.pathname=="/contact"){
+    if (window.location.pathname==="/contact"){
        return(
            <div className="d-none"></div>
        )

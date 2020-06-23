@@ -1,6 +1,5 @@
 import React from "react";
 import './PortfolioViewer.css';
-import portfolioImage from './kodeglobe header screenshot.png';
 import Fade from "react-reveal/Fade";
 // thinking of populating this viewer with js file
 
@@ -60,7 +59,7 @@ function PortfolioViewer(props){
                     </Fade> */}
                     {/* {props.data.paragraphs} */}
                     <Fade top distance={"10px"} delay={1600}>
-                <p><a href={props.data.link_url} target="_blank" className="medium-font">{props.data.link_title}</a></p>
+                <p><a href={props.data.link_url} target="_blank" rel="noopener noreferrer" className="medium-font">{props.data.link_title}</a></p>
                     </Fade>
                 </div>
                 <Fade left={!props.alt} right={props.alt} distance={"500px"} duration={2000} delay={1000}>

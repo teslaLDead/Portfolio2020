@@ -238,7 +238,7 @@ class About extends React.Component{
                                 <span className="medium-font">Information Technology (2015 - 2020)</span>
                             </p>
                             <div>
-                                <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank" className="bold">IIIT Gwalior</a>
+                                <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank"  rel="noopener noreferrer" className="bold">IIIT Gwalior</a>
                             </div>
                         </div>  
                     </Fade>
