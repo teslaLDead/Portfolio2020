@@ -1,6 +1,5 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import FeaturedSection from "./FeaturedSection";
 import BlogCategoryNav from './BlogCategoryNav';
 import BlogThumbnail from '../../CommonComponents/BlogThumbnail/BlogThumbnail'
 import Fade from 'react-reveal/Fade';
