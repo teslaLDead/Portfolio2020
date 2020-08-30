@@ -12,7 +12,7 @@ class BlogPost extends React.Component{
         data:{}
     }
 
-    componentDidMount = () =>{
+    componentDidMount = () => {
       
         let url = this.state.url.split('/')
         url=url[url.length-1]
@@ -30,6 +30,9 @@ class BlogPost extends React.Component{
                 }
                 tags
                 date
+                relatedBlogs {
+                    id
+                  }
             }
           }
           
@@ -55,6 +58,53 @@ class BlogPost extends React.Component{
             .then(console.error)
     }
 
+    componentDidUpdate = (prevProps) => {
+        if (prevProps.location.pathname !== document.location.pathname){
+        let url = document.location.pathname.split('/')
+        url=url[url.length-1]
+        // console.log(url)
+        const query=`
+        {
+            post(where: {slug: "${url}"}) {
+                title
+                content{
+                  html
+                }
+                excerpt
+                coverImage{
+                  url
+                }
+                tags
+                date
+                relatedBlogs {
+                    id
+                  }
+            }
+          }
+          
+        `
+        const apiURl=process.env.REACT_APP_CMS_API;
+
+        const opts = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query })
+        }
+
+        fetch(apiURl,opts)
+            .then(res=>res.json())
+            .then(data=>{
+                this.setState({
+                    url:document.URL,
+                    postDataLoaded:true,
+                    data:data.data.post
+                })
+                // console.log(this.state.data)
+            })
+            .then(console.error)
+    }
+    }
+
     
 
     render(){
@@ -74,7 +124,7 @@ class BlogPost extends React.Component{
                     <div className="section-heading">
                         Blog Post
                     </div>
-                    <h1>{this.state.data.title}</h1>
+                    <h1>{this.state.data.title.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')}</h1>
                   
                             {/* this will contain the tags related to the blog  */}
                     <div>
@@ -103,12 +153,11 @@ class BlogPost extends React.Component{
                             Related Articles
                         </div>
                         <div className="row">
+                            {this.state.data.relatedBlogs.map(el=>
                             <div className="col-2 col-m-4">
-                                <BlogThumbnail />
-                            </div>
-                            <div className="col-2 col-m-4">
-                                <BlogThumbnail />
-                            </div>
+                                <BlogThumbnail id={el.id}/>
+                            </div>)}
+                            
                         </div>
                     </div>
                 </div>
