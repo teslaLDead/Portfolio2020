@@ -20,7 +20,7 @@ class BlogHome extends React.Component{
           }
           
         `;
-        console.log(process.env.REACT_APP_CMS_API)
+        // console.log(process.env.REACT_APP_CMS_API)
         const url = process.env.REACT_APP_CMS_API;
 
         const opts = {
@@ -28,11 +28,11 @@ class BlogHome extends React.Component{
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ query })
         }
-        console.log('fetch starts here')
+        // console.log('fetch starts here')
         fetch(url,opts)
             .then(res=>res.json())
             .then((data)=>{
-                console.log(data)
+                // console.log(data)
                 this.setState({
                     data:data,
                     postsLoaded:true

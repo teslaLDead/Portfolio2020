@@ -11,7 +11,7 @@ const BlogThumbnail = ( { id } ) => {
         loaded:false
     })
     
-    console.log(id)
+    // console.log(id)
     useEffect(()=>{
         const query= `{
         post(where: {id: "${id}"}) {

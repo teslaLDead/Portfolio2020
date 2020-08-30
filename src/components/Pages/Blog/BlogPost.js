@@ -16,7 +16,7 @@ class BlogPost extends React.Component{
       
         let url = this.state.url.split('/')
         url=url[url.length-1]
-        console.log(url)
+        // console.log(url)
         const query=`
         {
             post(where: {slug: "${url}"}) {
@@ -50,7 +50,7 @@ class BlogPost extends React.Component{
                     postDataLoaded:true,
                     data:data.data.post
                 })
-                console.log(this.state.data)
+                // console.log(this.state.data)
             })
             .then(console.error)
     }

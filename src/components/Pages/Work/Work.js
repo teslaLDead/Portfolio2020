@@ -64,7 +64,7 @@ class Work extends React.Component{
             ];
         
             works.forEach(element => {
-                console.log(element)
+                // console.log(element)
             })
        
         return(

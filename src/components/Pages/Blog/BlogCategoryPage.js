@@ -18,7 +18,6 @@ export default class BlogCategoryPage extends React.Component{
         this.setState({
             categoryURL:document.location.pathname.split('/').slice(-1)[0]
         })
-        console.log(document.location.pathname.split('/').slice(-1))
 
         const query= `
         {
@@ -28,18 +27,16 @@ export default class BlogCategoryPage extends React.Component{
           }
           
         `;
-        const url = process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
+        const url = process.env.REACT_APP_CMS_API;
 
         const opts = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ query })
         }
-        console.log('fetch starts here')
         fetch(url,opts)
             .then(res=>res.json())
             .then((data)=>{
-                console.log(data)
                 this.setState({
                     blogs:data.data.posts
                 })
@@ -59,18 +56,16 @@ export default class BlogCategoryPage extends React.Component{
           }
           
         `;
-        const url = process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
+        const url = process.env.REACT_APP_CMS_API;
 
         const opts = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ query })
         }
-        console.log('fetch starts here')
         fetch(url,opts)
             .then(res=>res.json())
             .then((data)=>{
-                console.log(data)
                 this.setState({
                     blogs:data.data.posts
                 })
@@ -94,7 +89,6 @@ export default class BlogCategoryPage extends React.Component{
 
         let BlogCategoryName=this.state.categoryURL.split('_').join(' ');
 
-        console.log(this.state.blogs)
     
     return(
         <div className="dark-theme my-5 py-5">
