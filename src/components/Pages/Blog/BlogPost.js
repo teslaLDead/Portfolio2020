@@ -127,7 +127,7 @@ class BlogPost extends React.Component{
                     <h1>{this.state.data.title.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')}</h1>
                   
                             {/* this will contain the tags related to the blog  */}
-                    <div>
+                    <div className="blog-tags">
                         <span className="mr-5">
                             <b>Tags</b>
                         </span>

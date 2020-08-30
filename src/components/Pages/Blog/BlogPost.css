@@ -44,3 +44,26 @@
         width: 100%;
         min-height: 500px;
 }
+
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px){
+        .blog-post-container > header >h1{
+                font-size: 36px;
+        }
+        .blog-content  p {
+                margin: 0;
+        }
+
+        .blog-tags{
+                display: flex;
+                flex-direction: column;
+        }
+        .blog-tags a{
+                margin: 10px 0;
+        }
+        .blog-tags span{
+                margin-bottom: 10px;
+        }
+        .blog-content{
+                padding: 0.75em;
+        }
+}
