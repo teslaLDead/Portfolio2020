@@ -4,3 +4,7 @@
 .blog-thumbnail a{
     color: inherit;
 }
+.thumbnail-image-container{
+    height: 150px;
+    display: flex;
+}

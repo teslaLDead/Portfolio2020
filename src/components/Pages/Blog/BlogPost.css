@@ -9,9 +9,9 @@
 .blog-content{
         max-width: 800px;
         padding: 1.5em;
-        color: white;
+        color: black;
         border-radius: 8px;
-        background: rgb(34, 34, 37);
+        background: white;
 }
 
 .blog-content .code-section p{
@@ -28,14 +28,19 @@
         letter-spacing: 0.2px;
         font-size: medium;
         margin: 2rem;
-        color: #f1f1f1;
+        color: black;
         line-height: 1.8rem;
 }
 
 .blog-content code {
-    background: #191a1e;
+    background: #19234f;
     padding: 8px;
     width: 100%;
-    
+    color: white;
 }
 
+.blog-content iframe{
+        border: none;
+        width: 100%;
+        min-height: 500px;
+}

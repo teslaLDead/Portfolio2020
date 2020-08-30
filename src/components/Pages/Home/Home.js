@@ -156,10 +156,10 @@ class Home extends React.Component{
                             
                             <div className="row">
                                 <div className="col-2 col-m-4">
-                                    <BlogThumbnail /> 
+                                    <BlogThumbnail id="ckadrcx4g00pw01525c5d2e56"/> 
                                 </div>
                                 <div className="col-2 col-m-4">
-                                <BlogThumbnail />
+                                <BlogThumbnail id="ckeh4l1nk15r00152ow8x68sk"/>
                                 </div>
                                 
                             </div>

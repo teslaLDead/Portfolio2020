@@ -14,18 +14,13 @@ class BlogHome extends React.Component{
     componentDidMount = () =>{
         const query= `
         {
-            posts {
+            posts(stage: PUBLISHED) {
               id
-              slug
-              title
-              coverImage {
-                url
-              }
             }
           }
           
         `;
-        const url = process.env.REACT_APP_CMS_API;
+        const url = process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
 
         const opts = {
             method: "POST",
@@ -87,7 +82,7 @@ class BlogHome extends React.Component{
                     </div>
                     
                 </header>
-                <FeaturedSection data={this.state.data} postsLoaded={this.state.postsLoaded}/>
+                <FeaturedSection data={this.state.data} postsLoaded={this.state.postsLoaded}/> 
             </div>
         )
     }

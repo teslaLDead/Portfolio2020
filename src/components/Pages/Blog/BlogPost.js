@@ -35,7 +35,7 @@ class BlogPost extends React.Component{
           
         `
 
-        const apiURl=process.env.REACT_APP_CMS_API;
+        const apiURl=process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
 
         const opts = {
             method: "POST",
@@ -103,10 +103,10 @@ class BlogPost extends React.Component{
                             Related Articles
                         </div>
                         <div className="row">
-                            <div className="col-1 col-m-4">
+                            <div className="col-2 col-m-4">
                                 <BlogThumbnail />
                             </div>
-                            <div className="col-1 col-m-4">
+                            <div className="col-2 col-m-4">
                                 <BlogThumbnail />
                             </div>
                         </div>

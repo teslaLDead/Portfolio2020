@@ -2,12 +2,13 @@ import React from "react";
 import {Helmet} from "react-helmet";
 import FeaturedSection from "./FeaturedSection";
 import BlogCategoryNav from './BlogCategoryNav';
+import BlogThumbnail from '../../CommonComponents/BlogThumbnail/BlogThumbnail'
 import Fade from 'react-reveal/Fade';
 
 export default class BlogCategoryPage extends React.Component{
 
     state={
-        blogs:{},
+        blogs:[],
         blogsLoaded:false,
         categoryURL:""
 
@@ -16,14 +17,74 @@ export default class BlogCategoryPage extends React.Component{
     componentDidMount = () =>{
 
         this.setState({
-            categoryURL:document.URL
+            categoryURL:document.location.pathname.split('/').slice(-1)[0]
         })
+        console.log(document.location.pathname.split('/').slice(-1))
+
+        const query= `
+        {
+            posts(stage: PUBLISHED, where: {tags_contains_some: ${document.location.pathname.split('/').slice(-1)}}) {
+                id
+              }
+          }
+          
+        `;
+        const url = process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
+
+        const opts = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query })
+        }
+        console.log('fetch starts here')
+        fetch(url,opts)
+            .then(res=>res.json())
+            .then((data)=>{
+                console.log(data)
+                this.setState({
+                    blogs:data.data.posts
+                })
+            }
+            )
+            .catch(console.error)
      
+    }
+
+    componentDidUpdate = (prevProps,prevState) =>{
+        if(prevState.categoryURL !== this.state.categoryURL){
+            const query= `
+        {
+            posts(stage: PUBLISHED, where: {tags_contains_some: ${this.state.categoryURL}}) {
+                id
+              }
+          }
+          
+        `;
+        const url = process.env.REACT_APP_CMS_API || 'https://api-eu-central-1.graphcms.com/v2/ckbcjt7yc0cix01xyap6x3h0p/master';
+
+        const opts = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query })
+        }
+        console.log('fetch starts here')
+        fetch(url,opts)
+            .then(res=>res.json())
+            .then((data)=>{
+                console.log(data)
+                this.setState({
+                    blogs:data.data.posts
+                })
+            }
+            )
+            .catch(console.error)
+        }
+        
     }
 
     blogCategoryChange = (new_category) =>{
         this.setState({
-            categoryURL:new_category
+            categoryURL:new_category.split(' ').join('_')
         })
     }
 
@@ -32,9 +93,9 @@ export default class BlogCategoryPage extends React.Component{
 
     render(){
 
-        let BlogCategoryName=this.state.categoryURL.split('/');
-        BlogCategoryName=BlogCategoryName[BlogCategoryName.length-1].split('_').join(" ")
+        let BlogCategoryName=this.state.categoryURL.split('_').join(' ');
 
+        console.log(this.state.blogs)
     
     return(
         <div className="dark-theme my-5 py-5">
@@ -63,7 +124,15 @@ export default class BlogCategoryPage extends React.Component{
                 </div>
                 
             </div>
-            <FeaturedSection />
+            <div className="row my-5">
+                {this.state.blogs.map(({id})=>
+                <div className="col-2">
+                <BlogThumbnail id={id} />
+                </div>
+                )}
+            </div>
+            
+            
 
             
         </div>
