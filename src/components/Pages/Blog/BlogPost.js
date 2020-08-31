@@ -108,6 +108,11 @@ class BlogPost extends React.Component{
     
 
     render(){
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let date = new Date(this.state.data.date)
+
+        
+        
 
         if(this.state.postDataLoaded){
 
@@ -125,14 +130,20 @@ class BlogPost extends React.Component{
                         Blog Post
                     </div>
                     <h1>{this.state.data.title.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')}</h1>
-                  
-                            {/* this will contain the tags related to the blog  */}
+                    <div className="blog-details-header">
                     <div className="blog-tags">
                         <span className="mr-5">
                             <b>Tags</b>
                         </span>
                         {tagSection}
                     </div>
+                    <div>
+                        <span className="mr-5" role="img" aria-label="date">📅</span>
+                        <span>{date.getDate()} {months[date.getMonth()]}, {date.getFullYear()}</span>
+                    </div>
+                    </div>
+                            {/* this will contain the tags related to the blog  */}
+                    
                       
                     <div className="my-5 d-flex justify-content-center">
                         <img src={this.state.data.coverImage.url} alt=""  />
