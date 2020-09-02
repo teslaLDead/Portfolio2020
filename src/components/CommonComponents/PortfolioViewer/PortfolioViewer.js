@@ -25,7 +25,7 @@ function PortfolioViewer(props){
                     background:`${props.data.main_background}`
                 }}> </div>
             </Fade>
-            <div className="d-flex m-flex-direction-col-reverse">
+            <div className="d-flex m-flex-direction-col-reverse align-items-center">
                 <div className="portfolio-description">
                     {/* <p>
                         01.
